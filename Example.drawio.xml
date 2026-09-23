@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron">
+  <diagram name="Quản trị và Chiến lược Ngân hàng - Chương 1" id="Chapter1-BankStrategy-Mindmap">
+    <mxGraphModel dx="1628" dy="-1422" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TITLE_BANNER" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#1e293b;strokeColor=#0f172a;strokeWidth=2;fontColor=#ffffff;align=center;verticalAlign=middle;shadow=1;fontFamily=Helvetica;" vertex="1">
+          <mxGeometry height="95" width="1400" x="2500" y="3215" as="geometry" />
+        </mxCell>
+        <mxCell id="TITLE_TEXT" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#ffffff;fontSize=24;fontStyle=1;" value="CHƯƠNG 1: MÔ HÌNH HOẠT ĐỘNG KINH DOANH NGÂN HÀNG &amp; CÁC ĐỊNH CHẾ TÀI CHÍNH&lt;br/&gt;&lt;span style=&quot;font-size: 13px; font-weight: normal; opacity: 0.85; color: #94a3b8;&quot;&gt;Entity-based &amp; Hierarchical Systems Thinking Mindmap | Quản trị &amp; Chiến lược Ngân hàng UEH | Khung Basel III &amp; Luật Các TCTD 2024&lt;/span&gt;" vertex="1">
+          <mxGeometry height="75" width="1360" x="2520" y="3225" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_HEADER" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#37474F;strokeColor=#212121;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;" value="🏛️ [E1] NGÂN HÀNG TRUNG ƯƠNG (NHNN)&lt;br/&gt;&lt;span style=&quot;opacity: 0.85; font-size: 11px;&quot;&gt;Cơ quan Quản lý Tiền tệ &amp; Giám sát An toàn TCTD&lt;/span&gt;" vertex="1">
+          <mxGeometry height="55" width="340" x="2640" y="3385" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_CARD_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ECEFF1;strokeColor=#546E7A;fontColor=#263238;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="1.1 🎯 VAI TRÒ &amp; BẢN CHẤT PHÁP LÝ:&lt;br/&gt;• Cơ quan ngang Bộ thuộc Chính phủ quản lý hệ thống TCTD&lt;br/&gt;• Phi thương mại, hoàn toàn không hoạt động vì lợi nhuận&lt;br/&gt;• Ổn định giá trị đồng tiền, kiểm soát lạm phát &amp; vĩ mô&lt;br/&gt;• Người cho vay cuối cùng (LoLR) cứu trợ thanh khoản" vertex="1">
+          <mxGeometry height="80" width="330" x="2260" y="3490" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_CARD_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ECEFF1;strokeColor=#546E7A;fontColor=#263238;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="1.2 ⚙️ CÔNG CỤ &amp; CƠ CHẾ ĐIỀU TIẾT:&lt;br/&gt;• CSTT: Nghiệp vụ OMO, Tái cấp vốn, Dự trữ bắt buộc&lt;br/&gt;• Giám sát Basel: CAR ≥ 8%, siết trần LDR 85%, Room tín dụng&lt;br/&gt;• Luật TCTD 2024: Giảm trần sở hữu (Cá nhân 5%, Tổ chức 10%)&lt;br/&gt;• Bắt buộc dựng Firewalls ngăn sở hữu chéo &amp; lây lan (Đ.63, 136)" vertex="1">
+          <mxGeometry height="90" width="350" x="2635" y="3490" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_CARD_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ECEFF1;strokeColor=#546E7A;fontColor=#263238;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="1.3 ⚠️ CỨU TRỢ &amp; TÁC ĐỘNG HỆ THỐNG:&lt;br/&gt;• Định hình mặt bằng lãi suất &amp; chi phí vốn xã hội&lt;br/&gt;• Cho vay đặc biệt cứu thanh khoản khẩn cấp (Đ.192, 193)&lt;br/&gt;• Dập tắt nguy cơ sụp đổ thanh khoản dây chuyền&lt;br/&gt;• Giám sát chặt để triệt tiêu rủi ro đạo đức (Moral Hazard)" vertex="1">
+          <mxGeometry height="80" width="330" x="3030" y="3490" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_EDGE_1" edge="1" parent="1" source="E1_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#37474F;strokeWidth=1.5;curved=0;" target="E1_CARD_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_EDGE_2" edge="1" parent="1" source="E1_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#37474F;strokeWidth=1.5;curved=0;" target="E1_CARD_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_EDGE_3" edge="1" parent="1" source="E1_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#37474F;strokeWidth=1.5;curved=0;" target="E1_CARD_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_HEADER" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#1A237E;strokeColor=#0D47A1;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;" value="⚖️ [E2] BỘ TÀI CHÍNH (MoF)&lt;br/&gt;&lt;span style=&quot;opacity: 0.85; font-size: 11px;&quot;&gt;Cơ quan Quản lý Tài chính công &amp; Nợ công&lt;/span&gt;" vertex="1">
+          <mxGeometry height="55" width="340" x="3620" y="3385" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_CARD_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E8EAF6;strokeColor=#3949AB;fontColor=#1A237E;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="2.1 🎯 VAI TRÒ &amp; BẢN CHẤT QUẢN LÝ:&lt;br/&gt;• Quản lý ngân sách nhà nước, công sản &amp; nợ công quốc gia&lt;br/&gt;• Quản lý Nhà nước TTCK (UBCKNN) &amp; Bảo hiểm (QLGSBH)&lt;br/&gt;• Đại diện chủ sở hữu vốn nhà nước (Agribank, SCIC...)&lt;br/&gt;• Tuyệt đối KHÔNG quản lý Công ty Tài chính (thuộc NHNN)" vertex="1">
+          <mxGeometry height="80" width="330" x="3420" y="3490" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_CARD_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E8EAF6;strokeColor=#3949AB;fontColor=#1A237E;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="2.2 ⚙️ CÔNG CỤ &amp; CƠ CHẾ ĐIỀU HÀNH:&lt;br/&gt;• Chính sách tài khóa: Thuế, chi thường xuyên, đầu tư công&lt;br/&gt;• Phát hành Trái phiếu Chính phủ (TPCP) bù đắp bội chi&lt;br/&gt;• Cung ứng Tài sản thanh khoản chất lượng cao (HQLA)&lt;br/&gt;• Tạo lãi suất chuẩn phi rủi ro định giá thị trường tài chính" vertex="1">
+          <mxGeometry height="80" width="330" x="3790" y="3490" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_CARD_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E8EAF6;strokeColor=#3949AB;fontColor=#1A237E;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="2.3 ⚠️ PHỐI HỢP &amp; GIỚI HẠN VĨ MÔ:&lt;br/&gt;• Phối hợp Tài khóa - Tiền tệ (với NHNN) ổn định vĩ mô&lt;br/&gt;• Tránh hiệu ứng chèn lấn thanh khoản (Crowding-out)&lt;br/&gt;• Kiểm soát kỷ luật tài khóa &amp; trần an toàn nợ công quốc gia" vertex="1">
+          <mxGeometry height="80" width="300" x="4160" y="3490" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_EDGE_1" edge="1" parent="1" source="E2_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A237E;strokeWidth=1.5;curved=0;" target="E2_CARD_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_EDGE_2" edge="1" parent="1" source="E2_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A237E;strokeWidth=1.5;curved=0;" target="E2_CARD_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_EDGE_3" edge="1" parent="1" source="E2_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A237E;strokeWidth=1.5;curved=0;" target="E2_CARD_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_HEADER" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#1B5E20;strokeColor=#2E7D32;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;" value="💰 [E4] BÊN THỪA VỐN (SURPLUS UNITS)&lt;br/&gt;&lt;span style=&quot;opacity: 0.85; font-size: 11px;&quot;&gt;Hộ gia đình, Cá nhân gửi tiền &amp; Nhà đầu tư&lt;/span&gt;" vertex="1">
+          <mxGeometry height="55" width="340" x="1700" y="3715" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_CARD_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E8F5E9;strokeColor=#43A047;fontColor=#1B5E20;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="4.1 🎯 BẢN CHẤT &amp; ĐỘNG CƠ TÀI CHÍNH:&lt;br/&gt;• Cung ứng thặng dư tiết kiệm cho toàn nền kinh tế&lt;br/&gt;• Bảo toàn vốn gốc &amp; tối ưu hóa lãi suất sinh lời&lt;br/&gt;• Đòi hỏi tính thanh khoản cao (kỳ hạn ngắn, rút linh hoạt)&lt;br/&gt;• Ngại rủi ro (Risk-averse), yêu cầu cam kết trả 100% gốc" vertex="1">
+          <mxGeometry height="80" width="320" x="1520" y="3815" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_CARD_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E8F5E9;strokeColor=#43A047;fontColor=#1B5E20;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="4.2 ⚙️ CÔNG CỤ &amp; KÊNH PHÂN BỔ VỐN:&lt;br/&gt;• Tiền gửi thanh toán không kỳ hạn (CASA giá rẻ)&lt;br/&gt;• Tiền gửi tiết kiệm kỳ hạn ngắn/dài, Chứng chỉ tiền gửi (CDs)&lt;br/&gt;• Kênh phi tiền gửi: Cổ phiếu, Trái phiếu DN, CCQ, Bảo hiểm&lt;br/&gt;• Gửi tiết kiệm online qua Ví điện tử (kết nối NHTM)" vertex="1">
+          <mxGeometry height="80" width="330" x="1870" y="3815" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_CARD_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E8F5E9;strokeColor=#43A047;fontColor=#1B5E20;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="4.3 ⚠️ HÀNH VI &amp; RỦI RO HỆ THỐNG:&lt;br/&gt;• Tâm lý bầy đàn kích hoạt tháo chạy tập thể (Bank Run)&lt;br/&gt;• Chấp nhận rủi ro mất vốn ở kênh phi tiền gửi (không BHTG)&lt;br/&gt;• Rủi ro lạm phát làm suy giảm lãi suất thực" vertex="1">
+          <mxGeometry height="70" width="330" x="1700" y="3915" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_EDGE_1" edge="1" parent="1" source="E4_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1B5E20;strokeWidth=1.5;curved=0;" target="E4_CARD_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_EDGE_2" edge="1" parent="1" source="E4_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1B5E20;strokeWidth=1.5;curved=0;" target="E4_CARD_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_EDGE_3" edge="1" parent="1" source="E4_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1B5E20;strokeWidth=1.5;curved=0;" target="E4_CARD_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_HEADER" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#0D47A1;strokeColor=#1565C0;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;" value="🏛️ [E3] ĐỊNH CHẾ NHẬN TIỀN GỬI (NHTM CỐT LÕI)&lt;br/&gt;&lt;span style=&quot;opacity: 0.85; font-size: 11px;&quot;&gt;Trung gian Tài chính, Biến đổi kỳ hạn &amp; Cơ chế Dẫn truyền Thanh toán&lt;/span&gt;" vertex="1">
+          <mxGeometry height="55" width="380" x="2830" y="3715" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_CARD_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E3F2FD;strokeColor=#1E88E5;fontColor=#0D47A1;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="3.1 🎯 VAI TRÒ &amp; BẢN CHẤT SỐNG CÒN:&lt;br/&gt;• Đặc quyền tối thượng: Huy động tiền gửi từ công chúng&lt;br/&gt;• Hóa giải xung đột kỳ hạn hiến định Hicks (1939)&lt;br/&gt;• Mạng lưới truyền dẫn thanh toán toàn nền kinh tế&lt;br/&gt;• Cân bằng bộ ba: An toàn thanh khoản - Quy mô - Lợi nhuận (ROE)" vertex="1">
+          <mxGeometry height="80" width="350" x="2440" y="3815" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_CARD_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E3F2FD;strokeColor=#1E88E5;fontColor=#0D47A1;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="3.2 ⚙️ CƠ CHẾ HOẠT ĐỘNG ALM &amp; MÔ HÌNH:&lt;br/&gt;• Biến đổi kỳ hạn (Maturity Transformation): Vay ngắn - Cho dài&lt;br/&gt;• Đòn bẩy tài chính cực cao (Vốn CSH tài trợ tài sản gấp 10-25 lần)&lt;br/&gt;• Tiền gửi lõi (Core Deposits/CASA) &amp; Bể thanh khoản quy luật số lớn&lt;br/&gt;• Tái cấp vốn liên tục (Rolling-over), Vay liên ngân hàng &amp; Repo&lt;br/&gt;• Quản trị khe hở The Gap, Lãi suất thả nổi &amp; Hoán đổi phái sinh IRS&lt;br/&gt;• Chuẩn Basel III: Đệm LCR 30 ngày &amp; Tỷ lệ vốn ổn định NSFR&lt;br/&gt;• Cấu trúc BHC / FHC, Universal Banking &amp; 6 mô hình kinh doanh&lt;br/&gt;• Độc lập hóa Treasury Middle Office báo cáo trực tiếp CEO" vertex="1">
+          <mxGeometry height="145" width="410" x="2815" y="3815" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_CARD_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E3F2FD;strokeColor=#1E88E5;fontColor=#0D47A1;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="3.3 ⚠️ RỦI RO &amp; DỊCH CHUYỂN TƯ DUY:&lt;br/&gt;• Rủi ro thanh khoản &amp; Bank Run (The Gap kỳ hạn)&lt;br/&gt;• Rủi ro tín dụng &amp; Nợ xấu (Credit / Default Risk)&lt;br/&gt;• Rủi ro lây lan (Contagion) trong mô hình tập đoàn FHC&lt;br/&gt;• Dịch chuyển Pre-crash (chạy theo ROE) sang Post-crash (Bảng CĐKT)&lt;br/&gt;• Áp lực CIR &amp; Thách thức Rút tiền Mili-giây qua Bot API" vertex="1">
+          <mxGeometry height="95" width="340" x="3255" y="3815" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_EDGE_1" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0D47A1;strokeWidth=1.5;curved=0;" target="E3_CARD_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_EDGE_2" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0D47A1;strokeWidth=1.5;curved=0;" target="E3_CARD_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_EDGE_3" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0D47A1;strokeWidth=1.5;curved=0;" target="E3_CARD_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E5_HEADER" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#BF360C;strokeColor=#E65100;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;" value="🏭 [E5] BÊN THIẾU VỐN (DEFICIT UNITS)&lt;br/&gt;&lt;span style=&quot;opacity: 0.85; font-size: 11px;&quot;&gt;Doanh nghiệp, Cá nhân vay &amp; Chính phủ&lt;/span&gt;" vertex="1">
+          <mxGeometry height="55" width="340" x="4030" y="3715" as="geometry" />
+        </mxCell>
+        <mxCell id="E5_CARD_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFF3E0;strokeColor=#FB8C00;fontColor=#BF360C;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="5.1 🎯 BẢN CHẤT &amp; NHU CẦU TÀI TRỢ:&lt;br/&gt;• Hấp thụ vốn cho sản xuất, kinh doanh, hạ tầng, mua nhà&lt;br/&gt;• Nhu cầu tài trợ dài hạn (Dự án, máy móc, nhà ở 5-25 năm)&lt;br/&gt;• Mong muốn kỳ hạn vay dài nhất với chi phí lãi vay thấp nhất" vertex="1">
+          <mxGeometry height="80" width="320" x="3840" y="3815" as="geometry" />
+        </mxCell>
+        <mxCell id="E5_CARD_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFF3E0;strokeColor=#FB8C00;fontColor=#BF360C;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="5.2 ⚙️ HÌNH THỨC &amp; KÊNH HUY ĐỘNG:&lt;br/&gt;• Vay tín dụng NHTM: Vốn lưu động ngắn hạn, Dự án trung dài hạn&lt;br/&gt;• Cho vay hợp vốn (Syndicated Loans) cho siêu dự án hạ tầng&lt;br/&gt;• Huy động thị trường vốn trực tiếp: Trái phiếu DN, IPO Cổ phiếu&lt;br/&gt;• Vay tiêu dùng tín chấp từ CTTC &amp; Mua trước trả sau (BNPL)" vertex="1">
+          <mxGeometry height="85" width="340" x="4200" y="3815" as="geometry" />
+        </mxCell>
+        <mxCell id="E5_CARD_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFF3E0;strokeColor=#FB8C00;fontColor=#BF360C;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="5.3 ⚠️ NGHĨA VỤ &amp; RỦI RO HOÀN TRẢ:&lt;br/&gt;• Rủi ro chi phí lãi vay tăng khi lãi suất thả nổi điều chỉnh&lt;br/&gt;• Rủi ro kinh doanh thua lỗ dẫn đến mất khả năng thanh toán&lt;br/&gt;• Tác động tạo nợ xấu (NPL) trực tiếp cho phía ngân hàng" vertex="1">
+          <mxGeometry height="75" width="320" x="4030" y="3920" as="geometry" />
+        </mxCell>
+        <mxCell id="E5_EDGE_1" edge="1" parent="1" source="E5_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#BF360C;strokeWidth=1.5;curved=0;" target="E5_CARD_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E5_EDGE_2" edge="1" parent="1" source="E5_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#BF360C;strokeWidth=1.5;curved=0;" target="E5_CARD_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E5_EDGE_3" edge="1" parent="1" source="E5_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#BF360C;strokeWidth=1.5;curved=0;" target="E5_CARD_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E6_HEADER" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#006064;strokeColor=#00838F;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;" value="🛡️ [E6] MẠNG LƯỚI AN TOÀN THỂ CHẾ (SAFETY NET)&lt;br/&gt;&lt;span style=&quot;opacity: 0.85; font-size: 11px;&quot;&gt;Bảo hiểm Tiền gửi &amp; Người cho vay cuối cùng (LoLR)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="55" width="350" x="4690" y="3715" as="geometry" />
+        </mxCell>
+        <mxCell id="E6_CARD_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E0F7FA;strokeColor=#00ACC1;fontColor=#006064;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="6.1 🎯 SỨ MỆNH &amp; MỤC TIÊU HỆ THỐNG:&lt;br/&gt;• Bảo vệ người gửi tiền nhỏ lẻ thiếu thông tin tài chính&lt;br/&gt;• Duy trì niềm tin công chúng vào toàn hệ thống ngân hàng&lt;br/&gt;• Triệt tiêu trạng thái cân bằng xấu Diamond &amp; Dybvig (1983)&lt;br/&gt;• Ngăn ngừa phản ứng dây chuyền tháo chạy tập thể" vertex="1">
+          <mxGeometry height="80" width="320" x="4580" y="3815" as="geometry" />
+        </mxCell>
+        <mxCell id="E6_CARD_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E0F7FA;strokeColor=#00ACC1;fontColor=#006064;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="6.2 ⚙️ CƠ CHẾ THỰC THI ĐA TẦNG:&lt;br/&gt;• Thu phí bảo hiểm định kỳ từ các TCTD nhận tiền gửi&lt;br/&gt;• Chi trả hạn mức bảo hiểm theo luật (tối đa 125 triệu đồng)&lt;br/&gt;• Cho vay đặc biệt cứu trợ thanh khoản khẩn cấp (Đ.192, 193)&lt;br/&gt;• Tham gia kiểm soát đặc biệt và tái cơ cấu TCTD yếu kém" vertex="1">
+          <mxGeometry height="80" width="330" x="4930" y="3815" as="geometry" />
+        </mxCell>
+        <mxCell id="E6_CARD_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E0F7FA;strokeColor=#00ACC1;fontColor=#006064;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="6.3 ⚠️ GIỚI HẠN &amp; RỦI RO ĐẠO ĐỨC:&lt;br/&gt;• Chỉ bảo vệ người gửi tiền nhỏ, không bảo hiểm tiền gửi lớn&lt;br/&gt;• Nguy cơ Rủi ro đạo đức (Moral Hazard) từ phía NHTM&lt;br/&gt;• Cần kết hợp thanh tra vi mô NHNN để duy trì kỷ luật thị trường" vertex="1">
+          <mxGeometry height="75" width="320" x="4760" y="3915" as="geometry" />
+        </mxCell>
+        <mxCell id="E6_EDGE_1" edge="1" parent="1" source="E6_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006064;strokeWidth=1.5;curved=0;" target="E6_CARD_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E6_EDGE_2" edge="1" parent="1" source="E6_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006064;strokeWidth=1.5;curved=0;" target="E6_CARD_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E6_EDGE_3" edge="1" parent="1" source="E6_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006064;strokeWidth=1.5;curved=0;" target="E6_CARD_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E8_HEADER" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#880E4F;strokeColor=#AD1457;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;" value="📱 [E8] ĐỊNH CHẾ CÔNG NGHỆ &amp; NỀN TẢNG SỐ (FINTECH)&lt;br/&gt;&lt;span style=&quot;opacity: 0.85; font-size: 11px;&quot;&gt;Fintech, Super-Apps, Cổng thanh toán, Big Data &amp; Open API&lt;/span&gt;" vertex="1">
+          <mxGeometry height="55" width="360" x="2040" y="4155" as="geometry" />
+        </mxCell>
+        <mxCell id="E8_CARD_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FCE4EC;strokeColor=#D81B60;fontColor=#880E4F;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="8.1 🎯 VAI TRÒ &amp; VỊ THẾ HỆ SINH THÁI:&lt;br/&gt;• Cầu nối hạ tầng kỹ thuật (Platform) phân phối sản phẩm tài chính&lt;br/&gt;• Siêu ứng dụng (Super-App: Grab, Shopee) giữ chân người dùng&lt;br/&gt;• Khai thác dữ liệu hành vi lớn (Big Data) &amp; Chấm điểm tín dụng AI" vertex="1">
+          <mxGeometry height="75" width="340" x="1690" y="4255" as="geometry" />
+        </mxCell>
+        <mxCell id="E8_CARD_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FCE4EC;strokeColor=#D81B60;fontColor=#880E4F;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="8.2 ⚙️ SẢN PHẨM &amp; PHÂN ĐỊNH BẢN CHẤT:&lt;br/&gt;• Ví điện tử &amp; Cổng thanh toán số (MoMo, ZaloPay, VNPay)&lt;br/&gt;• Mua trước trả sau (BNPL: SPayLater): Bản chất cho vay tiêu dùng&lt;br/&gt;• Tiết kiệm online: Chuyển về NHTM đối tác (ĐƯỢC BHTG)&lt;br/&gt;• Túi Thần Tài/Đầu tư: Hợp tác kinh doanh (KHÔNG ĐƯỢC BHTG)&lt;br/&gt;• Kết nối Open API &amp; Luân chuyển dòng tiền tức thời" vertex="1">
+          <mxGeometry height="100" width="370" x="2060" y="4255" as="geometry" />
+        </mxCell>
+        <mxCell id="E8_CARD_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FCE4EC;strokeColor=#D81B60;fontColor=#880E4F;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="8.3 ⚠️ THÁCH THỨC &amp; RỦI RO TRỒI HIỆN:&lt;br/&gt;• Gặm nhấm thị phần dịch vụ thanh toán truyền thống&lt;br/&gt;• Áp lực đẩy tăng chi phí hạ tầng CNTT &amp; tỷ lệ CIR của ngân hàng&lt;br/&gt;• Hiện tượng Rút tiền Mili-giây qua Bot API đánh sập chuẩn LCR 30 ngày" vertex="1">
+          <mxGeometry height="75" width="340" x="2460" y="4255" as="geometry" />
+        </mxCell>
+        <mxCell id="E8_EDGE_1" edge="1" parent="1" source="E8_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#880E4F;strokeWidth=1.5;curved=0;" target="E8_CARD_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E8_EDGE_2" edge="1" parent="1" source="E8_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#880E4F;strokeWidth=1.5;curved=0;" target="E8_CARD_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E8_EDGE_3" edge="1" parent="1" source="E8_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#880E4F;strokeWidth=1.5;curved=0;" target="E8_CARD_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7_HEADER" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#4A148C;strokeColor=#6A1B9A;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;" value="🏢 [E7] ĐỊNH CHẾ PHI TIỀN GỬI (NON-DEPOSITORY)&lt;br/&gt;&lt;span style=&quot;opacity: 0.85; font-size: 11px;&quot;&gt;CTCK, Bảo hiểm, Quỹ đầu tư, CTTC (TCTD phi ngân hàng)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="55" width="360" x="3290" y="4155" as="geometry" />
+        </mxCell>
+        <mxCell id="E7_CARD_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#F3E5F5;strokeColor=#8E24AA;fontColor=#4A148C;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="7.1 🎯 VAI TRÒ &amp; RANH GIỚI PHÁP LÝ:&lt;br/&gt;• Cung cấp dịch vụ đầu tư, bảo vệ rủi ro &amp; thu xếp vốn chuyên sâu&lt;br/&gt;• TUYỆT ĐỐI KHÔNG nhận tiền gửi cá nhân từ công chúng&lt;br/&gt;• Khách hàng tự chịu rủi ro thị trường (Không cam kết hoàn 100% gốc)&lt;br/&gt;• Bộ Tài chính quản lý TTCK &amp; Bảo hiểm; NHNN quản lý CTTC" vertex="1">
+          <mxGeometry height="78" width="375" x="2890" y="4256" as="geometry" />
+        </mxCell>
+        <mxCell id="E7_CARD_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#F3E5F5;strokeColor=#8E24AA;fontColor=#4A148C;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="7.2 ⚙️ CẤU TRÚC PHÂN LOẠI &amp; HOẠT ĐỘNG:&lt;br/&gt;• CTCK: Môi giới, Margin, IB tư vấn M&amp;A, Bảo lãnh phát hành IPO&lt;br/&gt;• Bảo hiểm: Thu phí định kỳ đầu tư TPCP &amp; Cổ phiếu blue-chip dài hạn&lt;br/&gt;• Quỹ: Phát hành CCQ quản lý danh mục đa tài sản (Cổ phiếu, TP)&lt;br/&gt;• CTTC &amp; Leasing: Huy động trái phiếu/vay tổ chức cho vay tiêu dùng&lt;br/&gt;• Tích hợp Universal Banking &amp; Bán chéo sản phẩm (Cross-selling)" vertex="1">
+          <mxGeometry height="100" width="380" x="3280" y="4255" as="geometry" />
+        </mxCell>
+        <mxCell id="E7_CARD_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#F3E5F5;strokeColor=#8E24AA;fontColor=#4A148C;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;" value="7.3 ⚠️ TÁC ĐỘNG, NGUY CƠ &amp; FIREWALLS:&lt;br/&gt;• Rủi ro thị trường &amp; biến động định giá giá trị tài sản ròng (NAV)&lt;br/&gt;• Rủi ro Ngân hàng bóng tối (Shadow Banking) lách chuẩn an toàn&lt;br/&gt;• Nguy cơ lây lan thua lỗ sang Ngân hàng mẹ nếu thiếu Firewalls&lt;br/&gt;• Bắt buộc thiết lập bức tường lửa pháp lý như vách ngăn tàu Titanic" vertex="1">
+          <mxGeometry height="80" width="340" x="3710" y="4255" as="geometry" />
+        </mxCell>
+        <mxCell id="E7_EDGE_1" edge="1" parent="1" source="E7_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4A148C;strokeWidth=1.5;curved=0;" target="E7_CARD_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7_EDGE_2" edge="1" parent="1" source="E7_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4A148C;strokeWidth=1.5;curved=0;" target="E7_CARD_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7_EDGE_3" edge="1" parent="1" source="E7_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4A148C;strokeWidth=1.5;curved=0;" target="E7_CARD_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CROSS_E1_E2" edge="1" parent="1" source="E2_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=2;fontSize=11;fontFamily=Helvetica;curved=0;exitX=0;exitY=0.35;entryX=1;entryY=0.35;startArrow=classic;startFill=1;" target="E1_HEADER" value="Phối hợp Chính sách Tài khóa &amp; Chính sách Tiền tệ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CROSS_E1_E3" edge="1" parent="1" source="E1_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#37474F;strokeWidth=2.5;dashed=1;fontSize=11;fontFamily=Helvetica;curved=0;exitX=0.25;exitY=1;entryX=0.3;entryY=0;" target="E3_HEADER" value="CSTT, Dự trữ bắt buộc, Quy chế Basel &amp; Tái cấp vốn">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2725" y="3675" />
+              <mxPoint x="2944" y="3675" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E3_E1" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546E7A;strokeWidth=1.5;fontSize=10;fontFamily=Helvetica;curved=0;exitX=0.15;exitY=0;entryX=0.65;entryY=1;" target="E1_HEADER" value="Ký gửi dự trữ bắt buộc &amp; Báo cáo an toàn vĩ mô">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2887" y="3635" />
+              <mxPoint x="2861" y="3635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E2_E3" edge="1" parent="1" source="E2_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1A237E;strokeWidth=2;fontSize=11;fontFamily=Helvetica;curved=0;exitX=0.2;exitY=1;entryX=0.75;entryY=0;" target="E3_HEADER" value="Phát hành Trái phiếu Chính phủ (Tài sản thanh khoản HQLA)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3688" y="3590" />
+              <mxPoint x="3115" y="3590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E2_E7" edge="1" parent="1" source="E2_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3949AB;strokeWidth=1.5;fontSize=10;fontFamily=Helvetica;curved=0;exitX=0.8;exitY=1;entryX=0.8;entryY=0;" target="E7_HEADER" value="Quản lý nhà nước TTCK (UBCKNN) &amp; Bảo hiểm (Cục QLGSBH)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CROSS_E4_E3" edge="1" parent="1" source="E4_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1B5E20;strokeWidth=3;fontSize=11;fontFamily=Helvetica;curved=0;exitX=1;exitY=0.3;entryX=0;entryY=0.3;" target="E3_HEADER" value="Gửi tiền tiết kiệm &amp; CASA (Huy động ngắn hạn, đòn bẩy cao)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CROSS_E3_E4" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#43A047;strokeWidth=1.5;fontSize=10;fontFamily=Helvetica;curved=0;exitX=0;exitY=0.75;entryX=1;entryY=0.75;" target="E4_HEADER" value="Chi trả lãi suất tiền gửi &amp; Thanh toán theo yêu cầu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CROSS_E3_E5" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#BF360C;strokeWidth=3;fontSize=11;fontFamily=Helvetica;curved=0;exitX=1;exitY=0.3;entryX=0;entryY=0.3;" target="E5_HEADER" value="Cung cấp tín dụng ngắn, trung &amp; dài hạn (Biến đổi kỳ hạn 25 năm)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CROSS_E5_E3" edge="1" parent="1" source="E5_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FB8C00;strokeWidth=1.5;fontSize=10;fontFamily=Helvetica;curved=0;exitX=0;exitY=0.75;entryX=1;entryY=0.75;" target="E3_HEADER" value="Hoàn trả nợ gốc &amp; Lãi vay (Phát sinh rủi ro nợ xấu NPL)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CROSS_E4_E7" edge="1" parent="1" source="E4_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6A1B9A;strokeWidth=1.5;fontSize=10;fontFamily=Helvetica;curved=0;exitX=0.5;exitY=1;entryX=0.2;entryY=0;" target="E7_HEADER" value="Mua Chứng chỉ quỹ, Cổ phiếu, Trái phiếu &amp; Phí bảo hiểm">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1870" y="4010" />
+              <mxPoint x="3362" y="4010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E5_E7" edge="1" parent="1" source="E5_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#8E24AA;strokeWidth=1.5;fontSize=10;fontFamily=Helvetica;curved=0;exitX=0.25;exitY=1;entryX=0.7;entryY=0;" target="E7_HEADER" value="Tư vấn M&amp;A, Bảo lãnh phát hành Trái phiếu DN &amp; IPO Cổ phiếu">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4115" y="4025" />
+              <mxPoint x="3542" y="4025" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E3_E7" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4A148C;strokeWidth=2;fontSize=11;fontFamily=Helvetica;curved=0;exitX=0.85;exitY=1;entryX=0.45;entryY=0;" target="E7_HEADER" value="Mô hình FHC, Đầu tư công ty con &amp; Bán chéo (Bancassurance)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3153" y="3960" />
+              <mxPoint x="3452" y="3960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E1_E7" edge="1" parent="1" source="E1_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D32F2F;strokeWidth=2;dashed=1;fontSize=10;fontFamily=Helvetica;curved=0;exitX=0.8;exitY=1;entryX=0.35;entryY=0;" target="E7_HEADER" value="Dựng Bức tường lửa (Firewalls) ngăn lây lan rủi ro từ công ty con">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2912" y="3780" />
+              <mxPoint x="3416" y="3780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E3_E6" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00838F;strokeWidth=1.5;fontSize=10;fontFamily=Helvetica;curved=0;exitX=0.9;exitY=0;entryX=0.1;entryY=0;" target="E6_HEADER" value="Nộp phí bảo hiểm tiền gửi định kỳ theo quy định">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CROSS_E6_E4" edge="1" parent="1" source="E6_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006064;strokeWidth=2;dashed=1;fontSize=11;fontFamily=Helvetica;curved=0;exitX=0.5;exitY=0;entryX=0.5;entryY=0;" target="E4_HEADER" value="Cam kết hạn mức chi trả bảo hiểm (125 triệu) triệt tiêu Bank Run">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4865" y="3340" />
+              <mxPoint x="1870" y="3340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E1_E6" edge="1" parent="1" source="E1_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00838F;strokeWidth=1.5;dashed=1;fontSize=10;fontFamily=Helvetica;curved=0;exitX=0.75;exitY=0;entryX=0.5;entryY=0;" target="E6_HEADER" value="Cho vay đặc biệt (LoLR Đ.192) bơm thanh khoản khẩn cấp">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2895" y="3360" />
+              <mxPoint x="4865" y="3360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E8_E3" edge="1" parent="1" source="E8_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#880E4F;strokeWidth=2;fontSize=11;fontFamily=Helvetica;curved=0;exitX=0.8;exitY=0;entryX=0.1;entryY=1;" target="E3_HEADER" value="Hạ tầng thanh toán, Kênh phân phối số Open API &amp; Thách thức rút tiền mili-giây">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2328" y="3980" />
+              <mxPoint x="2868" y="3980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E8_E4" edge="1" parent="1" source="E8_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D81B60;strokeWidth=1.5;fontSize=10;fontFamily=Helvetica;curved=0;exitX=0.2;exitY=0;entryX=0.5;entryY=1;" target="E4_HEADER" value="Cung cấp trải nghiệm Super-App, Ví điện tử &amp; Dịch vụ BNPL">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2112" y="4050" />
+              <mxPoint x="1870" y="4050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
