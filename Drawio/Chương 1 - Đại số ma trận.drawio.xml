@@ -1,0 +1,246 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0">
+  <diagram name="Chương 1 - Đại số ma trận" id="ueh-math-matrix-algebra-ch01">
+    <mxGraphModel grid="0" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E1_HEADER" parent="1" style="rounded=1;arcSize=10;fillColor=#37474F;strokeColor=#212121;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="🏛️ [E1] MA TRẬN &amp;amp; CÁC DẠNG ĐẶC BIỆT&lt;br&gt;Cấu trúc Dữ liệu Đa chiều, Hệ vectơ Dòng/Cột &amp;amp; Các Phép toán Đại số" vertex="1">
+          <mxGeometry height="43" width="428" x="1387" y="3369" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_CARD_1" parent="1" style="rounded=1;arcSize=8;fillColor=#ECEFF1;strokeColor=#546E7A;fontColor=#263238;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;1.1 🎯 BẢN CHẤT &amp;amp; BIỂU DIỄN HỆ THỐNG:&lt;br&gt;• Bảng số chữ nhật gồm \(m\) dòng, \(n\) cột (kích thước \(m \times n\))&lt;br&gt;• Phần tử \(a_{ij}\) nằm tại giao điểm của dòng \(i\) và cột \(j\)&lt;br&gt;• Hệ vectơ dòng: \(\mathbf{r}_i = (a_{i1}, a_{i2}, \dots, a_{in}) \in \mathbb{R}^n\)&lt;br&gt;• Hệ vectơ cột: \(\mathbf{c}_j = (a_{1j}, a_{2j}, \dots, a_{mj})^T \in \mathbb{R}^m\)&lt;br&gt;• Ý nghĩa kinh tế: Bảng số liệu I/O, ma trận chi phí, giỏ tài sản&lt;/div&gt;" vertex="1">
+          <mxGeometry height="111" width="329.8125" x="1234" y="3449" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_CARD_2" parent="1" style="rounded=1;arcSize=8;fillColor=#ECEFF1;strokeColor=#546E7A;fontColor=#263238;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 170%;&quot;&gt;1.2 ⚙️ CÁC DẠNG MA TRẬN ĐẶC BIỆT CỐT LÕI:&lt;br&gt;• Ma trận Không \(O\): Toàn bộ phần tử \(a_{ij} = 0\)&lt;br&gt;• Ma trận vuông cấp \(n\) (\(m = n\)): Vết \(\text{tr}(A) = \sum_{i=1}^n a_{ii}\) (tổng chéo chính)&lt;br&gt;• Ma trận đường chéo: \(a_{ij} = 0, \forall i \neq j\); Đơn vị \(I_n\) (đường chéo \(= 1\) )&lt;br&gt;• Ma trận tam giác: Trên (\(a_{ij} = 0\) khi \(i \gt j\)); Dưới (\(a_{ij} = 0\) khi \(i \lt j\))&lt;br&gt;• Đối xứng (\(A = A^T\)); Phản đối xứng (\(A = -A^T\), đường chéo chính \(= 0\))&lt;br&gt;• Ma trận bậc thang (REF): Dòng \(0\) ở đáy, pivot lùi sang phải dòng trên&lt;/div&gt;" vertex="1">
+          <mxGeometry height="142.921875" width="397.5" x="1664" y="3441" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_CARD_3" parent="1" style="rounded=1;arcSize=8;fillColor=#ECEFF1;strokeColor=#546E7A;fontColor=#263238;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 180%;&quot;&gt;1.3 🔄 PHÉP TOÁN ĐẠI SỐ MA TRẬN:&lt;br&gt;• Cộng/Trừ (cùng cỡ \(m \times n\)): \((A \pm B)_{ij} = a_{ij} \pm b_{ij}\); Giao hoán &amp;amp; kết hợp&lt;br&gt;• Nhân vô hướng: \(k \cdot A = (k \cdot a_{ij})\); \(k(A+B) = kA + kB\)&lt;br&gt;• Chuyển vị \(A^T\): \((A^T)^T = A\); \((A+B)^T = A^T + B^T\); \((AB)^T = B^T A^T\)&lt;br&gt;• Nhân ma trận \(A_{m \times p} \cdot B_{p \times n} = C_{m \times n}\): \(c_{ij} = \mathbf{r}_i(A) \cdot \mathbf{c}_j(B)\)&lt;br&gt;• Tính chất nhân: Kết hợp \(A(BC) = (AB)C\); Phân phối \(A(B+C) = AB + AC\)&lt;br&gt;• Lũy thừa ma trận vuông: \(A^k = A \cdot A \dots A\) (\(k\) thừa số); \(A^0 = I_n\)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150.578125" width="439.875" x="1087" y="3690" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_EDGE_1" edge="1" parent="1" source="E1_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#37474F;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E1_CARD_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_EDGE_2" edge="1" parent="1" source="E1_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#37474F;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E1_CARD_2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1601" y="3424.33" />
+              <mxPoint x="1862.75" y="3424.33" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E1_EDGE_3" edge="1" parent="1" source="E1_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#37474F;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E1_CARD_3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1601" y="3589" />
+              <mxPoint x="1307" y="3589" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E1_EDGE_4" edge="1" parent="1" source="E1_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#37474F;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E1_CARD_4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1600.43" y="3595.29" />
+              <mxPoint x="1817.57" y="3595.29" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E2_HEADER" parent="1" style="rounded=1;arcSize=10;fillColor=#1A237E;strokeColor=#0D47A1;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="⚖️ [E2] ĐỊNH THỨC CỦA MA TRẬN VUÔNG&lt;br&gt;Chữ ký Số học, Thước đo Biến dạng Thể tích &amp;amp; Chẩn đoán Sức khỏe Hệ thống" vertex="1">
+          <mxGeometry height="43" width="476" x="2513" y="3369" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_CARD_2" parent="1" style="rounded=1;arcSize=8;fillColor=#E8EAF6;strokeColor=#3949AB;fontColor=#1A237E;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 180%;&quot;&gt;2.2 ⚙️ PHƯƠNG PHÁP TÍNH TOÁN THEO CẤP:&lt;br&gt;• Cấp 1: \(|a| = a\); Cấp 2: \(\begin{vmatrix} a &amp;amp; b \\ c &amp;amp; d \end{vmatrix} = ad - bc\) (chéo chính trừ chéo phụ)&lt;br&gt;• Cấp 3: Quy tắc Sarrus (tổng 3 đường chéo thuận trừ tổng 3 chéo nghịch)&lt;br&gt;• Cấp \(n\) tổng quát (Khai triển Laplace quy nạp theo dòng \(i\) hoặc cột \(j\)):&lt;br&gt;  + Định thức con bù \(M_{ij}\): Bỏ dòng \(i\), cột \(j\) của ma trận cấp \(n\)&lt;br&gt;  + Phần bù đại số: \(A_{ij} = (-1)^{i+j} M_{ij}\)&lt;br&gt;  + Khai triển: \(\det(A) = \sum_{j=1}^n a_{ij} A_{ij}\) (dòng \(i\)) \(= \sum_{i=1}^n a_{ij} A_{ij}\) (cột \(j\))&lt;br&gt;• Định lý Alien Cofactors: Nhân dòng \(i\) với phần bù dòng \(k\) (\(i \neq k\)): \(\sum a_{ij} A_{kj} = 0\)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="181.546875" width="431.75" x="2840" y="3446" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_CARD_3" parent="1" style="rounded=1;arcSize=8;fillColor=#E8EAF6;strokeColor=#3949AB;fontColor=#1A237E;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 190%;&quot;&gt;2.3 📐 5 TÍNH CHẤT ĐẠI SỐ NỀN TẢNG:&lt;br&gt;• TC1 (Đổi chỗ dòng/cột): Hoán vị 2 dòng hoặc 2 cột \(\implies \det(B) = -\det(A)\)&lt;br&gt;• TC2 (Thừa số chung): Rút \(k\) từ 1 dòng ra ngoài; BẪY UEH: \(\det(k \cdot A_{n \times n}) = k^n \det(A)\)&lt;br&gt;• TC3 (Bảo toàn): Cộng vào 1 dòng bội số dòng khác (\(d_i + c \cdot d_j\)) \(\implies \det\) KHÔNG ĐỔI&lt;br&gt;• TC4 (Tam giác): Định thức ma trận tam giác/chéo = tích chéo chính: \(\det(A) = \prod_{i=1}^n a_{ii}\)&lt;br&gt;• TC5 (Chuyển vị &amp;amp; Tích): \(\det(A^T) = \det(A)\); \(\det(AB) = \det(A)\det(B)\); \(\det(A^k) = [\det(A)]^k\)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="137.4375" width="523.421875" x="2142.58" y="3645" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_CARD_4" parent="1" style="rounded=1;arcSize=8;fillColor=#E8EAF6;strokeColor=#3949AB;fontColor=#1A237E;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 140%;&quot;&gt;2.4 ⚠️ DẤU HIỆU NHẬN BIẾT NHANH \(\det(A) = 0\):&lt;br&gt;• Có ít nhất một dòng hoặc cột gồm toàn các số \(0\)&lt;br&gt;• Có hai dòng hoặc hai cột giống hệt nhau&lt;br&gt;• Có hai dòng hoặc hai cột tỉ lệ với nhau (\(d_i = k \cdot d_j\))&lt;br&gt;• Một dòng (cột) là tổ hợp tuyến tính của các dòng (cột) khác&lt;br&gt;• Ý nghĩa cốt tử: \(\det(A) = 0\) báo hiệu ma trận bị suy biến (Singular), không thể khả nghịch&lt;/div&gt;" vertex="1">
+          <mxGeometry height="104.4375" width="476.15625" x="2785" y="3666" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_EDGE_1" edge="1" parent="1" source="E2_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1A237E;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E2_CARD_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_EDGE_2" edge="1" parent="1" source="E2_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1A237E;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E2_CARD_2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2751" y="3432" />
+              <mxPoint x="3055.9" y="3432" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E2_EDGE_3" edge="1" parent="1" source="E2_CARD_1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1A237E;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E2_CARD_3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2444.83" y="3626" />
+              <mxPoint x="2404.33" y="3626" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E2_EDGE_4" edge="1" parent="1" source="E2_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1A237E;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E2_CARD_4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2751" y="3643" />
+              <mxPoint x="3016.5" y="3643" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E3_HEADER" parent="1" style="rounded=1;arcSize=10;fillColor=#1B5E20;strokeColor=#2E7D32;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="💰 [E3] MA TRẬN NGHỊCH ĐẢO &amp;amp; PHƯƠNG TRÌNH MA TRẬN&lt;br&gt;Toán tử Khả nghịch, Chiếc chìa khóa Giải mã Hệ phương trình &amp;amp; Cân bằng Kinh tế" vertex="1">
+          <mxGeometry height="43" width="496" x="1340" y="3909" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_CARD_1" parent="1" style="rounded=1;arcSize=8;fillColor=#E8F5E9;strokeColor=#388E3C;fontColor=#1B5E20;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;3.1 🎯 ĐIỀU KIỆN KHẢ NGHỊCH &amp;amp; BẢN CHẤT HỌC THUẬT:&lt;br&gt;• Định nghĩa: Ma trận vuông \(A\) khả nghịch nếu tồn tại \(A^{-1}\) sao cho \(A \cdot A^{-1} = A^{-1} \cdot A = I_n\)&lt;br&gt;• Tính duy nhất: Ma trận nghịch đảo \(A^{-1}\) nếu tồn tại thì là DUY NHẤT&lt;br&gt;• Điều kiện cần và đủ: \(\det(A) \neq 0 \iff A\) là ma trận không suy biến (Non-singular)&lt;br&gt;• Ma trận suy biến (Singular): \(\det(A) = 0 \iff\) Không tồn tại ma trận nghịch đảo&lt;br&gt;• Rủi ro số học &quot;Gần suy biến&quot; (Near-singularity): \(\det(A) \approx 0\) dẫn đến hệ số điều kiện lớn,&lt;br&gt;  sai số làm tròn bùng nổ, phá hủy tính ổn định của mô hình kinh tế lượng&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135.15625" width="489.546875" x="1050" y="4016" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_CARD_2" parent="1" style="rounded=1;arcSize=8;fillColor=#E8F5E9;strokeColor=#388E3C;fontColor=#1B5E20;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 190%;&quot;&gt;3.2 ⚙️ TÍNH CHẤT HỆ THỐNG CỦA MA TRẬN NGHỊCH ĐẢO:&lt;br&gt;• Tự nghịch đảo: \((A^{-1})^{-1} = A\)&lt;br&gt;• Nghịch đảo chuyển vị: \((A^T)^{-1} = (A^{-1})^T\)&lt;br&gt;• ĐẢO CHIỀU TÍCH: \((AB)^{-1} = B^{-1} A^{-1}\) (Mở rộng: \((A_1 \dots A_k)^{-1} = A_k^{-1} \dots A_1^{-1}\))&lt;br&gt;• Nghịch đảo lũy thừa: \((A^k)^{-1} = (A^{-1})^k = A^{-k}\)&lt;br&gt;• Nhân hằng số: \((k \cdot A)^{-1} = \frac{1}{k} A^{-1}\) với \(k \neq 0\) (Phân biệt với \(\det(kA) = k^n \det(A)\))&lt;br&gt;• Định thức của nghịch đảo: \(\det(A^{-1}) = \frac{1}{\det(A)}\)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="158.484375" width="454.53125" x="1619" y="4010" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_CARD_3" parent="1" style="rounded=1;arcSize=8;fillColor=#E8F5E9;strokeColor=#388E3C;fontColor=#1B5E20;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 190%;&quot;&gt;3.3 🔄 2 PHƯƠNG PHÁP XÁC ĐỊNH \(A^{-1}\) CHUẨN THI UEH:&lt;br&gt;• Phương pháp 1 (Ma trận Phụ hợp Adjugate - Chuẩn tự luận):&lt;br&gt;  + B1: Tính \(\det(A)\). Nếu \(\det(A) = 0 \implies\) kết luận không khả nghịch; Nếu \(\det(A) \neq 0\) sang B2&lt;br&gt;  + B2: Tính ma trận phần bù đại số \(C = (A_{ij})\) với \(A_{ij} = (-1)^{i+j} M_{ij}\)&lt;br&gt;  + B3: Lập ma trận phụ hợp \(\text{adj}(A) = C^T\) (BẪY LỚN: Bắt buộc phải chuyển vị \(C\))&lt;br&gt;  + B4: Công thức nghịch đảo: \(A^{-1} = \frac{1}{\det(A)} C^T\)&lt;br&gt;• Phương pháp 2 (Gauss-Jordan biến đổi dòng sơ cấp):&lt;br&gt;  + Ghép khối \([A \mid I_n] \xrightarrow{\text{biến đổi dòng}} [I_n \mid A^{-1}]\) (Nếu không về \(I_n \implies\) không khả nghịch)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180.578125" width="509.078125" x="1030.47" y="4191" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_CARD_4" parent="1" style="rounded=1;arcSize=8;fillColor=#E8F5E9;strokeColor=#388E3C;fontColor=#1B5E20;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 180%;&quot;&gt;3.4 ⚠️ GIẢI PHƯƠNG TRÌNH MA TRẬN (QUY TẮC TẢ - HỮU):&lt;br&gt;• Do \(AB \neq BA\), vị trí nhân \(A^{-1}\) quyết định trực tiếp tính đúng sai:&lt;br&gt;• Dạng 1 (Đứng bên TRÁI ẩn số): \(A X = B \implies X = A^{-1} B\) (Nhân trái 2 vế với \(A^{-1}\))&lt;br&gt;• Dạng 2 (Đứng bên PHẢI ẩn số): \(X A = B \implies X = B A^{-1}\) (Nhân phải 2 vế với \(A^{-1}\))&lt;br&gt;• Dạng 3 (Vế phải chuyển vị): \(A X = B^T \implies X = A^{-1} B^T\); \(X A = B^T \implies X = B^T A^{-1}\)&lt;br&gt;• Dạng 4 (Kẹp hai bên ẩn số): \(A X B = C \implies X = A^{-1} C B^{-1}\) (Khi \(A\) và \(B\) đều khả nghịch)&lt;br&gt;• CẢNH BÁO BẪY: Tuyệt đối không viết \(X = \frac{B}{A}\) hoặc \(X = B A^{-1}\) cho phương trình \(A X = B\)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150.578125" width="499.4375" x="1630" y="4219" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_EDGE_1" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1B5E20;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E3_CARD_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_EDGE_2" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1B5E20;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E3_CARD_2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_EDGE_3" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1B5E20;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E3_CARD_3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1600" y="4169" />
+              <mxPoint x="1301" y="4169" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E3_EDGE_4" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1B5E20;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E3_CARD_4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1600" y="4194" />
+              <mxPoint x="1879.5" y="4194" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E4_HEADER" parent="1" style="rounded=1;arcSize=10;fillColor=#4A154B;strokeColor=#6B1D6D;fontColor=#ffffff;fontStyle=1;fontSize=13;shadow=1;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="🏭 [E4] HẠNG MA TRẬN &amp;amp; PHÂN TÍCH HỆ TUYẾN TÍNH&lt;br&gt;Thước đo Độc lập Tuyến tính, Tiêu chuẩn Nghiệm Kronecker-Capelli &amp;amp; Hồi quy OLS" vertex="1">
+          <mxGeometry height="43" width="503" x="2666" y="3906" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_CARD_1" parent="1" style="rounded=1;arcSize=8;fillColor=#F3E5F5;strokeColor=#7B1FA2;fontColor=#4A148C;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;4.1 🎯 ĐỊNH NGHĨA &amp;amp; BẢN CHẤT CỦA HẠNG:&lt;br&gt;• Ký hiệu: \(\rho(A)\) hoặc \(\text{rank}(A)\) hoặc \(r(A)\); Áp dụng cho MỌI ma trận \(A_{m \times n}\)&lt;br&gt;• Bản chất không gian: Số lượng tối đa các vectơ dòng (hoặc cột) ĐỘC LẬP TUYẾN TÍNH&lt;br&gt;• Định nghĩa qua định thức con: Cấp cao nhất của các định thức con khác \(0\) trích từ \(A\)&lt;br&gt;• Định nghĩa qua ma trận bậc thang (REF): Bằng đúng số dòng khác không sau khử Gauss&lt;br&gt;• Cơ sở &amp;amp; Số chiều: Cho biết số chiều \(\dim(\text{Row}(A)) = \dim(\text{Col}(A)) = \rho(A)\)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="111" width="474.15625" x="2200" y="4027" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_CARD_2" parent="1" style="rounded=1;arcSize=8;fillColor=#F3E5F5;strokeColor=#7B1FA2;fontColor=#4A148C;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 140%;&quot;&gt;4.2 ⚙️ PHÉP BIẾN ĐỔI SƠ CẤP BẢO TOÀN HẠNG:&lt;br&gt;• 3 phép biến đổi dòng sơ cấp bảo toàn nguyên vẹn hạng ma trận:&lt;br&gt;  1. Hoán đổi vị trí 2 dòng: \(d_i \leftrightarrow d_j\)&lt;br&gt;  2. Nhân một dòng với hằng số thực \(k \neq 0\): \(d_i \to k \cdot d_i\)&lt;br&gt;  3. Cộng vào 1 dòng bội số của dòng khác: \(d_i \to d_i + k \cdot d_j\)&lt;br&gt;• Quy trình chuẩn xác định hạng: Sử dụng thuật toán khử Gauss đưa \(A\) về dạng bậc thang REF&lt;br&gt;  (hoặc tam giác) \(\implies\) Đếm số lượng phần tử trụ dẫn đầu (pivots khác \(0\)) \(= \text{rank}(A)\)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="119.84375" width="497.96875" x="2855" y="4010" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_CARD_3" parent="1" style="rounded=1;arcSize=8;fillColor=#F3E5F5;strokeColor=#7B1FA2;fontColor=#4A148C;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 170%;&quot;&gt;4.3 📐 TÍNH CHẤT ĐẠI SỐ &amp;amp; BẤT ĐẲNG THỨC HẠNG:&lt;br&gt;• Giới hạn kích thước: \(0 \le \rho(A_{m \times n}) \le \min(m, n)\); \(\rho(A) = 0 \iff A = O\)&lt;br&gt;• Đối xứng dòng - cột: \(\rho(A) = \rho(A^T) = \rho(A A^T) = \rho(A^T A)\)&lt;br&gt;• Bất đẳng thức tích: \(\rho(AB) \le \min\{\rho(A), \rho(B)\}\) (Phép nhân không bao giờ làm tăng hạng)&lt;br&gt;• Bất đẳng thức tổng: \(\rho(A + B) \le \rho(A) + \rho(B)\)&lt;br&gt;• Hạng đầy đủ (Full rank): Full row rank khi \(\rho(A) = m\); Full column rank khi \(\rho(A) = n\)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124.21875" width="489.015625" x="2236" y="4172" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_CARD_4" parent="1" style="rounded=1;arcSize=8;fillColor=#F3E5F5;strokeColor=#7B1FA2;fontColor=#4A148C;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;4.4 ⚖️ TAM GIÁC VÀNG &amp;amp; TIÊU CHUẨN KRONECKER-CAPELLI:&lt;br&gt;• Mối liên hệ Tam giác Vàng (với ma trận vuông cấp \(n\)):&lt;br&gt;  \(\rho(A) = n \iff \det(A) \neq 0 \iff \exists A^{-1} \iff A\) không suy biến (Khả nghịch)&lt;br&gt;• Định lý Kronecker-Capelli biện luận hệ phương trình \(AX = b\) với \(\bar{A} = [A \mid b]\):&lt;br&gt;  + \(\rho(A) \lt \rho(\bar{A}) \implies\) Hệ VÔ NGHIỆM (Xuất hiện dòng mâu thuẫn dạng \([0 \dots 0 \mid c], c \neq 0\))&lt;br&gt;  + \(\rho(A) = \rho(\bar{A}) = n \implies\) Hệ CÓ NGHIỆM DUY NHẤT (Nghiệm tường minh \(X = A^{-1} b\))&lt;br&gt;  + \(\rho(A) = \rho(\bar{A}) = r \lt n \implies\) Hệ VÔ SỐ NGHIỆM (với \(n - r\) ẩn số tự do/tham số)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="137.09375" width="485.359375" x="2768" y="4159" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_EDGE_1" edge="1" parent="1" source="E4_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#4A154B;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E4_CARD_1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2917" y="3975" />
+              <mxPoint x="2442" y="3975" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E4_EDGE_2" edge="1" parent="1" source="E4_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#4A154B;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E4_CARD_2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_EDGE_3" edge="1" parent="1" source="E4_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#4A154B;strokeWidth=1.5;curved=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E4_CARD_3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2917" y="3976" />
+              <mxPoint x="2815" y="3976" />
+              <mxPoint x="2815" y="4141" />
+              <mxPoint x="2464" y="4141" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E4_EDGE_4" edge="1" parent="1" source="E4_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#4A154B;strokeWidth=1.5;curved=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E4_CARD_4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2917" y="3976" />
+              <mxPoint x="2838" y="3976" />
+              <mxPoint x="2838" y="4139" />
+              <mxPoint x="2949" y="4139" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E1_E2" edge="1" parent="1" source="E1_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1E293B;strokeWidth=2.5;fontSize=11;fontFamily=Helvetica;curved=0;exitX=1;exitY=0.35;entryX=0;entryY=0.35;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E2_HEADER" value="Chỉ xác định trên tập hợp Ma trận Vuông \(A_{n \times n} \in [E1]\)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CROSS_E2_E3" edge="1" parent="1" source="E2_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1A237E;strokeWidth=2.5;fontSize=11;fontFamily=Helvetica;curved=0;exitX=0.2;exitY=1;entryX=0.75;entryY=0;html=1;entryDx=0;entryDy=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E3_HEADER" value="Điều kiện cần &amp;amp; đủ: \(\det(A) \neq 0\) &amp;amp; Hệ số nghịch đảo \(A^{-1} = \frac{1}{\det(A)} C^T\)">
+          <mxGeometry relative="1" x="-0.0065" y="-11" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2608.2" y="3432.03" />
+              <mxPoint x="2696.03" y="3432.03" />
+              <mxPoint x="2696.03" y="3830.03" />
+              <mxPoint x="1712.67" y="3830.03" />
+              <mxPoint x="1712.67" y="3909" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E1_E4" edge="1" parent="1" source="E1_CARD_4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#37474F;strokeWidth=2;dashed=1;fontSize=11;fontFamily=Helvetica;curved=0;exitX=0.8;exitY=1;entryX=0.2;entryY=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E4_HEADER" value="Biến đổi dòng sơ cấp đưa \(A\) về dạng bậc thang REF để đếm dòng khác \(0\)">
+          <mxGeometry relative="1" x="0.2554" y="14" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1976" y="3879.26" />
+              <mxPoint x="2766.63" y="3879.26" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E4_E2_E3" edge="1" parent="1" source="E4_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#4A154B;strokeWidth=2.5;fontSize=11;fontFamily=Helvetica;curved=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;exitX=0.5;exitY=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E2_HEADER" value="Quan hệ Tam giác Vàng: \(\rho(A) = n \iff \det(A) \neq 0 \iff \exists A^{-1}\) (Không suy biến)">
+          <mxGeometry relative="1" x="-0.8267" y="-20" as="geometry">
+            <mxPoint x="17" y="9" as="offset" />
+            <Array as="points">
+              <mxPoint x="2917.5" y="3840" />
+              <mxPoint x="2716" y="3840" />
+              <mxPoint x="2716" y="3446" />
+              <mxPoint x="2632" y="3446" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CROSS_E3_E4" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1B5E20;strokeWidth=2;fontSize=11;fontFamily=Helvetica;curved=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E4_HEADER" value="Ma trận khả nghịch \(A\) luôn có Hạng Đầy Đủ: \(\rho(A) = n\)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APP_BANNER" parent="1" style="rounded=1;arcSize=8;fillColor=#004D40;strokeColor=#00251A;strokeWidth=2;fontColor=#ffffff;align=left;spacingLeft=15;spacingRight=15;fontSize=11;fontFamily=Helvetica;shadow=1;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 170%;&quot;&gt;🎯 ỨNG DỤNG TRỌNG TÂM CỦA ĐẠI SỐ MA TRẬN TRONG MÔ HÌNH KINH TẾ &amp;amp; QUẢN TRỊ UEH:&lt;br&gt;• Phân tích Cân bằng Kinh tế Vĩ mô (Hệ IS-LM): Chuyển hệ phương trình thị trường hàng hóa &amp;amp; tiền tệ về dạng \(AX = d\). Kiểm tra \(\det(A) \neq 0\) đảm bảo tồn tại điểm cân bằng duy nhất \((Y^*, r^*)\).&lt;br&gt;• Mô hình Cân đối Liên ngành Leontief (Input-Output Model): Giải hệ phương trình sản lượng \(X = (I - A)^{-1} D\) với ma trận hệ số kỹ thuật \(A\) và ma trận Leontief khả nghịch \((I - A)\).&lt;br&gt;• Kinh tế lượng &amp;amp; Phân tích Hồi quy OLS: Ước lượng hệ số hồi quy \(\hat{\beta} = (X^T X)^{-1} X^T y\) đòi hỏi ma trận biến giải thích \(X\) có hạng cột đầy đủ \(\text{rank}(X) = k\). Hiện tượng đa cộng tuyến khiến \(\text{rank}(X) \lt k\) làm \(X^T X\) suy biến.&lt;br&gt;• Quá trình Markov trong Kinh doanh: Tìm vectơ phân phối xác suất cân bằng dài hạn \(\pi^*\) thông qua hệ thuần nhất \((P^T - I)\pi^* = \mathbf{0}\) với ma trận chuyển trạng thái \(P\).&lt;/div&gt;" vertex="1">
+          <mxGeometry height="106.359375" width="1146.453125" x="1092" y="4465" as="geometry" />
+        </mxCell>
+        <mxCell id="APP_EDGE_E3" edge="1" parent="1" source="E3_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#004D40;strokeWidth=1.5;curved=0;exitX=0.5;exitY=1;entryX=0.25;entryY=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="APP_BANNER" value="Nghịch đảo giải hệ IS-LM &amp;amp; Leontief">
+          <mxGeometry relative="1" x="0.7573" y="-19" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1600" y="3965" />
+              <mxPoint x="1569" y="3965" />
+              <mxPoint x="1569" y="4422" />
+              <mxPoint x="1378.6" y="4422" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="APP_EDGE_E4" edge="1" parent="1" source="E4_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#004D40;strokeWidth=1.5;curved=0;exitX=0.25;exitY=1;entryX=0.75;entryY=0;exitDx=0;exitDy=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="APP_BANNER" value="Hạng kiểm tra Đa cộng tuyến OLS &amp;amp; Nghiệm duy nhất">
+          <mxGeometry relative="1" x="0.0683" y="-16" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2791.67" y="3965.08" />
+              <mxPoint x="2745" y="3965.08" />
+              <mxPoint x="2745" y="4412" />
+              <mxPoint x="1951.83" y="4412" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E1_CARD_4" parent="1" style="rounded=1;arcSize=8;fillColor=#ECEFF1;strokeColor=#546E7A;fontColor=#263238;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 170%;&quot;&gt;1.4 ⚠️ BẪY ĐẠI SỐ &amp;amp; NGUY CƠ THI CỬ UEH:&lt;br&gt;• KHÔNG CÓ TÍNH GIAO HOÁN: Tổng quát \(AB \neq BA\) (thứ tự nhân quyết định)&lt;br&gt;• KHÔNG CÓ PHÉP CHIA: Cấm viết \(\frac{B}{A}\); phải dùng nghịch đảo \(A^{-1}\)&lt;br&gt;• BẪY HẰNG ĐẲNG THỨC: \((A+B)^2 = A^2 + AB + BA + B^2 \neq A^2 + 2AB + B^2\)&lt;br&gt;• BẪY TRIỆT TIÊU: \(AB = O \nRightarrow A = O \lor B = O\) (có ước của \(0\))&lt;br&gt;• BẪY GIẢN ƯỚC: \(AB = AC \nRightarrow B = C\) khi ma trận \(A\) suy biến&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124.21875" width="459.953125" x="1608" y="3684" as="geometry" />
+        </mxCell>
+        <mxCell id="YWAyOt2Xcvsq9r6pkJrG-2" edge="1" parent="1" source="E2_HEADER" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#1A237E;strokeWidth=1.5;curved=0;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="E2_CARD_1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2751" y="3412" as="sourcePoint" />
+            <mxPoint x="2425" y="3656" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E2_CARD_1" parent="1" style="rounded=1;arcSize=8;fillColor=#E8EAF6;strokeColor=#3949AB;fontColor=#1A237E;fontSize=11;align=left;spacingLeft=8;spacingRight=8;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;div style=&quot;line-height: 140%;&quot;&gt;2.1 🎯 BẢN CHẤT &amp;amp; CHỮ KÝ SỐ ĐỊNH THỨC:&lt;br&gt;• Định thức \(\det(A)\) hoặc \(|A|\): Chỉ xác định cho DUY NHẤT ma trận vuông \(A_{n \times n}\)&lt;br&gt;• Không bao giờ tồn tại định thức cho ma trận chữ nhật \(m \neq n\)&lt;br&gt;• Ý nghĩa hình học: Đo lường hệ số co dãn diện tích/thể tích định hướng&lt;br&gt;• Công cụ chẩn đoán cốt lõi: Phân định hệ thống khả nghịch hay suy biến&lt;br&gt;• Ứng dụng: Quy tắc Cramer giải hệ phương trình và tính ma trận phụ hợp&lt;/div&gt;" vertex="1">
+          <mxGeometry height="104.4375" width="423.6875" x="2233" y="3506" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

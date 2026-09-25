@@ -1,7 +1,7 @@
 # MASTER CONTEXT: TOÁN DÀNH CHO KINH TẾ & QUẢN TRỊ (UEH)
 > **Cơ sở Dữ liệu Tri thức & Sổ bộ Thực thể Xuyên suốt Khóa học**  
 > *Đại học Kinh tế TP. Hồ Chí Minh (UEH) - Học kỳ 2*  
-> *Phiên bản: 1.0.0 (Cập nhật sau Chương 1)*
+> *Phiên bản: 2.0.0 (Cập nhật sau Chương 2 - Buổi 6: Hệ phương trình tuyến tính)*
 
 ---
 
@@ -24,11 +24,12 @@ Toàn bộ sơ đồ tư duy (Mindmap Draw.io) và tài liệu bối cảnh môn
 - **Thứ tự ưu tiên nhận thức:** Cấu trúc phân cấp trước (Hierarchy First) $\to$ Mối quan hệ liên kết sau (Relationship Second) $\to$ Chi tiết kỹ thuật cuối cùng (Detail Last).
 - **Mã định danh Bất biến (Persistent Entity IDs):** Mỗi thực thể được gán một mã vĩnh viễn (`[E1]`, `[E2]`, ...) được bảo toàn qua mọi chương học theo nguyên lý *"Định nghĩa một lần $\to$ Mở rộng về sau $\to$ Liên kết khi cần thiết"*.
 - **Ngữ pháp Thị giác Chuẩn Draw.io:** 
-  - Khung bao vô hạn (`page="0"`), lưới chuẩn 10px (`grid="1" gridSize="10"`).
+  - Khung bao vô hạn (`page="0"`), lưới chuẩn 10px (`grid="0"` hoặc `grid="1"`).
   - Tiêu đề toàn cục nền Slate Dark (`#1e293b`), bóng đổ nhẹ.
   - Header thực thể mang màu sắc chuyên biệt nhận diện theo chủ đề, bo góc `arcSize=10`, font chữ Helvetica 13px đậm.
   - Thẻ con mang màu phái sinh (lighter tint), bo góc `arcSize=8`, nội dung chia đầu mục ngắn gọn kèm biểu tượng nhận thức (🎯 Mục tiêu/Bản chất, ⚙️ Cơ chế/Phương pháp, 📐 Tính chất/Quy tắc, 🔄 Quy trình/Biến đổi, ⚠️ Cảnh báo/Bẫy thi cử).
   - Đường nối phân cấp trực giao (`orthogonalEdgeStyle;curved=0`), đường liên kết chéo (`CROSS_*`) có nhãn hành động rõ ràng.
+  - Hỗ trợ công thức toán học LaTeX với `math="1"` trong `mxGraphModel`, bao bọc bởi `\( ... \)`.
 
 ---
 
@@ -40,6 +41,8 @@ Toàn bộ sơ đồ tư duy (Mindmap Draw.io) và tài liệu bối cảnh môn
 | `[E2]` | **Định thức của Ma trận Vuông** *(Determinant of Square Matrix)* | ⚖️ | `#1A237E`<br>viền `#0D47A1` | `#E8EAF6`<br>viền `#3949AB` | Chương 1 (Buổi 2) | Giá trị vô hướng vô cùng đặc thù gán cho ma trận vuông, đo lường sự co giãn thể tích và là "chữ ký số" chẩn đoán suy biến. |
 | `[E3]` | **Ma trận Nghịch đảo & Phương trình Ma trận** *(Inverse Matrix & Matrix Equations)* | 💰 | `#1B5E20`<br>viền `#2E7D32` | `#E8F5E9`<br>viền `#388E3C` | Chương 1 (Buổi 3) | Toán tử nghịch đảo $A^{-1}$ đóng vai trò "phép chia", là chìa khóa giải quyết các phương trình ma trận và xác định điểm cân bằng kinh tế. |
 | `[E4]` | **Hạng Ma trận & Phân tích Hệ Tuyến tính** *(Matrix Rank & Linear Systems)* | 🏭 | `#4A154B`<br>viền `#6B1D6D` | `#F3E5F5`<br>viền `#7B1FA2` | Chương 1 (Buổi 4) | Thước đo số chiều và số lượng tối đa các vectơ độc lập tuyến tính, xác định cấu trúc nghiệm theo Kronecker-Capelli và điều kiện OLS. |
+| `[E5]` | **Hệ Phương trình Tuyến tính Tổng quát** *(General System of Linear Equations - SLE)* | 🧮 | `#B71C1C`<br>viền `#7F0000` | `#FFEBEE`<br>viền `#C62828` | Chương 2 (Buổi 6) | Cấu trúc đại số tổng quát gồm $m$ phương trình, $n$ ẩn ($AX=B$); mô hình hóa trạng thái cân bằng tương tác đa biến trong không gian $\mathbb{R}^n$. |
+| `[E6]` | **Hệ Cramer & Quy tắc Định thức Cramer** *(Cramer's System & Determinant Rule)* | 🎯 | `#E65100`<br>viền `#BF360C` | `#FFF3E0`<br>viền `#FB8C00` | Chương 2 (Buổi 6) | Dạng thức chính quy của hệ tuyến tính vuông không suy biến ($m=n, \det(A) \ne 0$), cung cấp nghiệm giải tích đóng dạng tỷ số định thức $x_j = D_j/D$. |
 
 ---
 
@@ -47,30 +50,43 @@ Toàn bộ sơ đồ tư duy (Mindmap Draw.io) và tài liệu bối cảnh môn
 
 ```text
 HỆ THỐNG: TOÁN CHO KINH TẾ & QUẢN TRỊ (UEH)
-└── CHƯƠNG 1: ĐẠI SỐ MA TRẬN (MATRIX ALGEBRA)
-    ├── 🏛️ [E1] MA TRẬN & CÁC DẠNG ĐẶC BIỆT
-    │   ├── 1.1 🎯 Bản chất & Biểu diễn Hệ thống (Cấu trúc m×n, Hệ vectơ dòng/cột, Bảng I/O)
-    │   ├── 1.2 ⚙️ Các dạng Ma trận Đặc biệt (Ma trận Không, Vuông, Đường chéo, Đơn vị In, Tam giác, Đối xứng, Bậc thang REF)
-    │   ├── 1.3 🔄 Phép toán Đại số Ma trận (Cộng/Trừ, Nhân vô hướng, Chuyển vị AT, Nhân ma trận AB, Lũy thừa Ak)
-    │   └── 1.4 ⚠️ Bẫy Đại số & Nguy cơ Thi cử (Bẫy giao hoán AB ≠ BA, Không có phép chia, Bẫy hằng đẳng thức, Bẫy triệt tiêu)
+├── CHƯƠNG 1: ĐẠI SỐ MA TRẬN (MATRIX ALGEBRA)
+│   ├── 🏛️ [E1] MA TRẬN & CÁC DẠNG ĐẶC BIỆT
+│   │   ├── 1.1 🎯 Bản chất & Biểu diễn Hệ thống (Cấu trúc m×n, Hệ vectơ dòng/cột, Bảng I/O)
+│   │   ├── 1.2 ⚙️ Các dạng Ma trận Đặc biệt (Ma trận Không, Vuông, Đường chéo, Đơn vị In, Tam giác, Đối xứng, Bậc thang REF)
+│   │   ├── 1.3 🔄 Phép toán Đại số Ma trận (Cộng/Trừ, Nhân vô hướng, Chuyển vị AT, Nhân ma trận AB, Lũy thừa Ak)
+│   │   └── 1.4 ⚠️ Bẫy Đại số & Nguy cơ Thi cử (Bẫy giao hoán AB ≠ BA, Không có phép chia, Bẫy hằng đẳng thức, Bẫy triệt tiêu)
+│   │
+│   ├── ⚖️ [E2] ĐỊNH THỨC CỦA MA TRẬN VUÔNG
+│   │   ├── 2.1 🎯 Bản chất & Chữ ký Số học (|A|, Chỉ tồn tại cho ma trận vuông, Đo co dãn thể tích)
+│   │   ├── 2.2 ⚙️ Phương pháp Tính toán theo Cấp (Cấp 1, 2, Cấp 3 Sarrus, Khai triển Laplace quy nạp, Định lý Alien Cofactors)
+│   │   ├── 2.3 📐 5 Tính chất Đại số Nền tảng (Đổi chỗ dòng đổi dấu, Thừa số chung k^n, Bảo toàn qua phép biến đổi loại 3, det tam giác, det(AT)=det(A))
+│   │   └── 2.4 ⚠️ Dấu hiệu Nhận biết Nhanh det=0 (Dòng 0, Dòng trùng nhau, Dòng tỉ lệ, Tổ hợp tuyến tính, Suy biến)
+│   │
+│   ├── 💰 [E3] MA TRẬN NGHỊCH ĐẢO & PHƯƠNG TRÌNH MA TRẬN
+│   │   ├── 3.1 🎯 Điều kiện Khả nghịch & Bản chất (A·A^(-1) = In, Duy nhất, det(A) ≠ 0, Rủi ro gần suy biến Near Singularity)
+│   │   ├── 3.2 ⚙️ Tính chất Hệ thống (Tự nghịch đảo, Nghịch đảo chuyển vị, Đảo chiều tích (AB)^(-1) = B^(-1)A^(-1), (kA)^(-1) = (1/k)A^(-1))
+│   │   ├── 3.3 🔄 2 Phương pháp Xác định Chuẩn thi (Phương pháp Phụ hợp Adjugate A^(-1) = (1/det)·C^T, Khử Gauss-Jordan [A|In] -> [In|A^(-1)])
+│   │   └── 3.4 ⚠️ Giải Phương trình Ma trận (Quy tắc Tả - Hữu: AX=B -> X=A^(-1)B, XA=B -> X=BA^(-1), AXB=C -> X=A^(-1)CB^(-1))
+│   │
+│   └── 🏭 [E4] HẠNG MA TRẬN & PHÂN TÍCH HỆ TUYẾN TÍNH
+│       ├── 4.1 🎯 Định nghĩa & Bản chất của Hạng (ρ(A), Số vectơ độc lập tuyến tính tối đa, Cấp định thức con khác 0, Số dòng khác 0 của REF)
+│       ├── 4.2 ⚙️ Biến đổi Sơ cấp Bảo toàn Hạng (Hoán đổi 2 dòng, Nhân dòng với k≠0, Cộng bội số dòng khác; Thuật toán khử Gauss)
+│       ├── 4.3 📐 Tính chất & Bất đẳng thức Hạng (0 ≤ ρ(A) ≤ min(m,n), ρ(A)=ρ(AT)=ρ(AAT), ρ(AB) ≤ min(ρ(A),ρ(B)), Hạng đầy đủ Full Rank)
+│       └── 4.4 ⚖️ Tam giác Vàng & Ứng dụng Kinh tế (ρ(A)=n ⟺ det(A)≠0 ⟺ ∃ A^(-1); Định lý Kronecker-Capelli; Bẫy Đa cộng tuyến OLS)
+│
+└── CHƯƠNG 2: HỆ PHƯƠNG TRÌNH TUYẾN TÍNH (SYSTEM OF LINEAR EQUATIONS)
+    ├── 🧮 [E5] HỆ PHƯƠNG TRÌNH TUYẾN TÍNH TỔNG QUÁT (SLE)
+    │   ├── 5.1 🎯 Bản chất & Biểu diễn Ma trận Hệ thống (Cấu trúc m×n, AX=B, Ma trận mở rộng [A|B], Không gian nghiệm S, Hệ tương đương)
+    │   ├── 5.2 ⚖️ Tiêu chuẩn Nghiệm Kronecker - Capelli (Chẩn đoán số nghiệm qua so sánh ρ(A) & ρ(A|B) với n: Vô nghiệm, Duy nhất, Vô số nghiệm)
+    │   ├── 5.3 🔄 Thuật toán Khử Gauss & Gauss - Jordan (Đưa [A|B] về REF/RREF, Phân định Ẩn cơ sở vs Ẩn tự do, Kỹ thuật thế ngược)
+    │   └── 5.4 ⚠️ Bẫy Biện luận Tham số & Rủi ro Học thuật UEH (Bẫy chia dòng cho tham số, Kết luận sớm khi chưa đạt REF, Nhầm m với n, Quên dòng mâu thuẫn)
     │
-    ├── ⚖️ [E2] ĐỊNH THỨC CỦA MA TRẬN VUÔNG
-    │   ├── 2.1 🎯 Bản chất & Chữ ký Số học (|A|, Chỉ tồn tại cho ma trận vuông, Đo co dãn thể tích)
-    │   ├── 2.2 ⚙️ Phương pháp Tính toán theo Cấp (Cấp 1, 2, Cấp 3 Sarrus, Khai triển Laplace quy nạp, Định lý Alien Cofactors)
-    │   ├── 2.3 📐 5 Tính chất Đại số Nền tảng (Đổi chỗ dòng đổi dấu, Thừa số chung k^n, Bảo toàn qua phép biến đổi loại 3, det tam giác, det(AT)=det(A))
-    │   └── 2.4 ⚠️ Dấu hiệu Nhận biết Nhanh det=0 (Dòng 0, Dòng trùng nhau, Dòng tỉ lệ, Tổ hợp tuyến tính, Suy biến)
-    │
-    ├── 💰 [E3] MA TRẬN NGHỊCH ĐẢO & PHƯƠNG TRÌNH MA TRẬN
-    │   ├── 3.1 🎯 Điều kiện Khả nghịch & Bản chất (A·A^(-1) = In, Duy nhất, det(A) ≠ 0, Rủi ro gần suy biến Near Singularity)
-    │   ├── 3.2 ⚙️ Tính chất Hệ thống (Tự nghịch đảo, Nghịch đảo chuyển vị, Đảo chiều tích (AB)^(-1) = B^(-1)A^(-1), (kA)^(-1) = (1/k)A^(-1))
-    │   ├── 3.3 🔄 2 Phương pháp Xác định Chuẩn thi (Phương pháp Phụ hợp Adjugate A^(-1) = (1/det)·C^T, Khử Gauss-Jordan [A|In] -> [In|A^(-1)])
-    │   └── 3.4 ⚠️ Giải Phương trình Ma trận (Quy tắc Tả - Hữu: AX=B -> X=A^(-1)B, XA=B -> X=BA^(-1), AXB=C -> X=A^(-1)CB^(-1))
-    │
-    └── 🏭 [E4] HẠNG MA TRẬN & PHÂN TÍCH HỆ TUYẾN TÍNH
-        ├── 4.1 🎯 Định nghĩa & Bản chất của Hạng (ρ(A), Số vectơ độc lập tuyến tính tối đa, Cấp định thức con khác 0, Số dòng khác 0 của REF)
-        ├── 4.2 ⚙️ Biến đổi Sơ cấp Bảo toàn Hạng (Hoán đổi 2 dòng, Nhân dòng với k≠0, Cộng bội số dòng khác; Thuật toán khử Gauss)
-        ├── 4.3 📐 Tính chất & Bất đẳng thức Hạng (0 ≤ ρ(A) ≤ min(m,n), ρ(A)=ρ(AT)=ρ(AAT), ρ(AB) ≤ min(ρ(A),ρ(B)), Hạng đầy đủ Full Rank)
-        └── 4.4 ⚖️ Tam giác Vàng & Ứng dụng Kinh tế (ρ(A)=n ⟺ det(A)≠0 ⟺ ∃ A^(-1); Định lý Kronecker-Capelli; Bẫy Đa cộng tuyến OLS)
+    └── 🎯 [E6] HỆ CRAMER & QUY TẮC ĐỊNH THỨC CRAMER
+        ├── 6.1 🎯 Bản chất & Điều kiện Cấu trúc Hệ Cramer (Hệ vuông m=n, Ma trận không suy biến det(A)=D≠0, Luôn có nghiệm duy nhất)
+        ├── 6.2 ⚙️ Quy tắc Định thức Cramer & Thuật toán 4 Bước (Định thức chính D, Định thức phụ Dj thay cột j bằng B, Công thức xj = Dj/D)
+        ├── 6.3 🔄 Nguồn gốc Đại số & Cầu nối Ma trận Nghịch đảo (X = A^(-1)B, Chứng minh qua Ma trận Phụ hợp, Định lý Alien Cofactors, Mẹo nhớ UEH)
+        └── 6.4 ⚠️ Bẫy Suy biến D = 0 & Giới hạn Thuật toán (Bẫy tử huyệt D=0 không suy ra vô nghiệm, Bắt buộc chuyển sang Gauss, Chi phí tính toán O(n!))
 ```
 
 ---
@@ -163,6 +179,87 @@ HỆ THỐNG: TOÁN CHO KINH TẾ & QUẢN TRỊ (UEH)
 
 ---
 
+### 🧮 THỰC THỂ `[E5]`: HỆ PHƯƠNG TRÌNH TUYẾN TÍNH TỔNG QUÁT (SLE)
+- **Định nghĩa Đại số Tổng quát:** Hệ gồm $m$ phương trình đại số tuyến tính với $n$ ẩn số ($x_1, x_2, \dots, x_n$):
+  $$\begin{cases} a_{11} x_1 + a_{12} x_2 + \cdots + a_{1n} x_n = b_1 \\ a_{21} x_1 + a_{22} x_2 + \cdots + a_{2n} x_n = b_2 \\ \vdots \\ a_{m1} x_1 + a_{m2} x_2 + \cdots + a_{mn} x_n = b_m \end{cases}$$
+- **Biểu diễn Ma trận Đương lượng:**
+  $$A_{m \times n} \cdot X_{n \times 1} = B_{m \times 1}$$
+  trong đó:
+  - Ma trận hệ số: $A = (a_{ij})_{m \times n} \in \mathcal{M}_{m \times n}(\mathbb{R})$.
+  - Cột ẩn số: $X = (x_1, x_2, \dots, x_n)^T \in \mathcal{M}_{n \times 1}(\mathbb{R})$.
+  - Cột hệ số tự do (vế phải): $B = (b_1, b_2, \dots, b_m)^T \in \mathcal{M}_{m \times 1}(\mathbb{R})$.
+  - Ma trận hệ số mở rộng (bổ sung): $\bar{A} = [A \mid B] \in \mathcal{M}_{m \times (n+1)}(\mathbb{R})$.
+- **Không gian Nghiệm & Tính Tương đương:**
+  - Tập nghiệm: $S = \{X \in \mathbb{R}^n \mid AX = B\}$. Hệ vô nghiệm khi $S = \emptyset$; Hệ tương thích khi $S \neq \emptyset$.
+  - Phép biến đổi tương đương: Hai hệ phương trình được gọi là tương đương khi chúng có cùng tập nghiệm $S$.
+  - 3 phép biến đổi dòng sơ cấp trên $\bar{A}$ bảo toàn nguyên vẹn tập nghiệm $S$:
+    1. Hoán đổi vị trí 2 dòng: $d_i \leftrightarrow d_j$.
+    2. Nhân một dòng với số thực khác 0: $d_i \to k \cdot d_i \ (k \neq 0)$.
+    3. Cộng vào một dòng bội số của dòng khác: $d_i \to d_i + k \cdot d_j$.
+- **Định lý Kronecker - Capelli (Tiêu chuẩn Tồn tại & Cấu trúc Nghiệm):**
+  Cho hệ phương trình $AX = B$ gồm $m$ phương trình, $n$ ẩn số và ma trận mở rộng $\bar{A} = [A \mid B]$:
+  $$\text{Hệ có nghiệm} \iff \rho(A) = \rho(\bar{A})$$
+  Ba trạng thái phân lập cấu trúc nghiệm:
+  1. **Vô nghiệm (Inconsistent):**
+     $$\rho(A) < \rho(\bar{A})$$
+     Dấu hiệu nhận biết trên ma trận bậc thang REF: Xuất hiện dòng mâu thuẫn dạng $[0 \ 0 \dots 0 \mid c]$ với $c \neq 0$ (phương trình tương đương $0x_1 + \dots + 0x_n = c \neq 0$, vô lý).
+  2. **Có nghiệm duy nhất (Unique Solution):**
+     $$\rho(A) = \rho(\bar{A}) = n \quad (\text{đúng bằng số ẩn số})$$
+     Mọi cột của ma trận hệ số $A$ đều có một phần tử trụ (pivot) dẫn đầu. Tập nghiệm là một điểm đơn lẻ $X^* \in \mathbb{R}^n$.
+  3. **Có vô số nghiệm (Infinitely Many Solutions):**
+     $$\rho(A) = \rho(\bar{A}) = r < n$$
+     Hệ có $r$ ẩn cơ sở (pivot variables) và $k = n - r$ ẩn tự do (free variables/tham số). Tập nghiệm là một không gian afin con $S \subset \mathbb{R}^n$ có số chiều $\dim(S) = n - r$.
+- **Thuật toán Khử Gauss & Gauss - Jordan:**
+  - *Bước 1 (Lập ma trận):* Viết ma trận mở rộng $\bar{A} = [A \mid B]$.
+  - *Bước 2 (Khử thuận Gauss):* Áp dụng 3 phép biến đổi dòng sơ cấp đưa $\bar{A}$ về ma trận bậc thang REF:
+    $$\bar{A} \xrightarrow{\text{Gauss}} \bar{A}_{\text{REF}} = \begin{pmatrix} p_{11} & * & \cdots & * & \mid & * \\ 0 & p_{22} & \cdots & * & \mid & * \\ \vdots & \vdots & \ddots & \vdots & \mid & \vdots \\ 0 & 0 & \cdots & p_{rr} & \mid & * \\ 0 & 0 & \cdots & 0 & \mid & c \end{pmatrix}$$
+  - *Bước 3 (Phân định biến số):*
+    - Các cột chứa pivot $p_{ii} \ne 0$ ứng với các **Ẩn cơ sở (Pivot variables)**.
+    - Các cột không chứa pivot ứng với các **Ẩn tự do (Free variables)**. Gán các ẩn tự do bằng tham số thực $t_1, t_2, \dots \in \mathbb{R}$.
+  - *Bước 4 (Thế ngược Back-substitution):* Giải từ phương trình dòng cuối cùng ngược lên dòng đầu tiên, biểu diễn các ẩn cơ sở theo các tham số tự do.
+  - *Gauss - Jordan:* Biến đổi tiếp tục để triệt tiêu các phần tử nằm PHÍA TRÊN các pivot, đưa về bậc thang rút gọn RREF (Reduced Row Echelon Form) với mọi pivot bằng 1 $\implies$ Đọc trực tiếp nghiệm của hệ thống mà không cần giải thế ngược.
+- **Cảnh báo Bẫy Biện luận Tham số & Rủi ro Học thuật UEH:**
+  - **BẪY TỬ HUYỆT 1: Chia dòng cho biểu thức chứa tham số.** Tuyệt đối không thực hiện $d_i \to \frac{1}{m-1} d_i$ trước khi xét riêng trường hợp $m = 1$. Việc chia dòng khi tham số bằng 0 sẽ làm biến mất nghiệm hoặc sinh ra nghiệm ảo phi lý.
+  - **BẪY TỬ HUYỆT 2: Kết luận số nghiệm khi ma trận CHƯA ĐẠT REF.** Nhiều sinh viên vội vàng đếm dòng khác 0 hoặc so sánh hạng khi các phần tử bên dưới đường chéo chưa triệt tiêu hoàn toàn về 0.
+  - **BẪY TỬ HUYỆT 3: Nhầm số phương trình $m$ với số ẩn $n$.** Để hệ có nghiệm duy nhất, điều kiện cần và đủ là $\rho(A) = \rho(\bar{A}) = n$ (bằng số ẩn), KHÔNG PHẢI bằng số phương trình $m$.
+  - **BẪY TỬ HUYỆT 4: Bỏ sót giá trị tham số tại dòng mâu thuẫn.** Dòng có dạng $[0 \dots 0 \mid m^2 - 4]$ sẽ gây vô nghiệm khi $m \neq \pm 2$, nhưng khi $m = 2$ hoặc $m = -2$ thì dòng này biến thành dòng toàn 0, dẫn tới khả năng hệ có vô số nghiệm. Bắt buộc phải thay trực tiếp từng giá trị đặc biệt của tham số vào lại ma trận ban đầu để kiểm chứng độc lập.
+
+---
+
+### 🎯 THỰC THỂ `[E6]`: HỆ CRAMER & QUY TẮC ĐỊNH THỨC CRAMER
+- **Định nghĩa Hệ Cramer:** Hệ phương trình đại số tuyến tính $AX = B$ được gọi là một **Hệ Cramer** khi và chỉ khi thỏa mãn đồng thời hai điều kiện cấu trúc:
+  1. Số phương trình bằng đúng số ẩn số ($m = n$, ma trận hệ số $A$ là ma trận vuông cấp $n$).
+  2. Ma trận hệ số $A$ không suy biến: $\det(A) = D \neq 0$.
+- **Định lý Cramer:** Mọi hệ Cramer **LUÔN LUÔN CÓ NGHIỆM DUY NHẤT**.
+- **Cơ sở Đại số & Nguồn gốc từ Ma trận Nghịch đảo:**
+  Do $\det(A) \neq 0$, ma trận $A$ khả nghịch và tồn tại duy nhất ma trận nghịch đảo $A^{-1} \in [E3]$. Khi đó:
+  $$AX = B \iff X = A^{-1} B = \frac{1}{\det(A)} \text{adj}(A) \cdot B$$
+  Tọa độ thứ $j$ của vectơ nghiệm $X = (x_1, x_2, \dots, x_n)^T$ là tích của dòng $j$ của ma trận phụ hợp $\text{adj}(A) = C^T$ với vectơ vế phải $B$:
+  $$x_j = \frac{1}{\det(A)} \sum_{i=1}^n (\text{adj}(A))_{ji} b_i = \frac{1}{\det(A)} \sum_{i=1}^n b_i A_{ij}$$
+  Theo công thức khai triển Laplace theo cột thứ $j$, biểu thức $\sum_{i=1}^n b_i A_{ij}$ chính là định thức của ma trận thu được bằng cách thay cột thứ $j$ của $A$ bằng vectơ $B$:
+  $$\sum_{i=1}^n b_i A_{ij} = \det(A_j) = D_j \implies x_j = \frac{D_j}{D}$$
+- **Hệ thống Công thức & Quy tắc Cramer:**
+  - Định thức chính: $D = \det(A) \neq 0$.
+  - Định thức phụ $D_j = \det(A_j)$ ($j = 1, 2, \dots, n$): Định thức của ma trận $A_j$ nhận được từ $A$ bằng cách thay cột thứ $j$ bằng cột hệ số tự do $B = (b_1, b_2, \dots, b_n)^T$:
+    $$D_j = \begin{vmatrix} a_{11} & \cdots & a_{1,j-1} & b_1 & a_{1,j+1} & \cdots & a_{1n} \\ a_{21} & \cdots & a_{2,j-1} & b_2 & a_{2,j+1} & \cdots & a_{2n} \\ \vdots & \ddots & \vdots & \vdots & \vdots & \ddots & \vdots \\ a_{n1} & \cdots & a_{n,j-1} & b_n & a_{n,j+1} & \cdots & a_{nn} \end{vmatrix}$$
+  - Công thức nghiệm đóng:
+    $$x_j = \frac{D_j}{D} \quad (\forall j = 1, 2, \dots, n)$$
+- **Quy trình 4 Bước Chuẩn Tự luận UEH:**
+  - *Bước 1:* Thiết lập ma trận hệ số $A$ và tính định thức chính $D = \det(A)$.
+  - *Bước 2:* Biện luận điều kiện Cramer: Khẳng định $D \neq 0$ để kết luận hệ là Hệ Cramer có nghiệm duy nhất.
+  - *Bước 3:* Thiết lập các ma trận thành phần $A_j$ và tính các định thức phụ $D_j$.
+  - *Bước 4:* Tính toán và kết luận nghiệm $x_j = \frac{D_j}{D}$. Nếu đề bài chỉ yêu cầu tìm một biến kinh tế cụ thể (ví dụ: sản lượng cân bằng $Y^*$ hoặc giá cân bằng $P_1^*$), chỉ cần tính duy nhất định thức phụ tương ứng.
+- **Cảnh báo Bẫy Suy biến $D = 0$ & Giới hạn Thuật toán UEH:**
+  - **BẪY TỬ HUYỆT KINH ĐIỂN: $D = 0 \nRightarrow$ Hệ vô nghiệm!**  
+    Khi $D = 0$, quy tắc Cramer hoàn toàn **BẤT LỰC (Inapplicable)**. Ta tuyệt đối KHÔNG ĐƯỢC KẾT LUẬN hệ vô nghiệm. Lúc này hệ phương trình có thể **Vô nghiệm** hoặc **Vô số nghiệm**.
+  - **HÀNH ĐỘNG BẮT BUỘC:** Khi $D = 0$, sinh viên bắt buộc phải từ bỏ phương pháp Cramer và quay lại **Thuật toán khử Gauss `[E5]`** trên ma trận mở rộng $\bar{A} = [A \mid B]$ để so sánh hạng $\rho(A)$ và $\rho(\bar{A})$.
+  - **BẪY $D_1 = D_2 = \dots = D_n = 0$:** Nếu $D = 0$ và đồng thời tất cả các $D_j = 0$, hệ vẫn có thể VÔ NGHIỆM! Không được ngộ nhận hệ có vô số nghiệm.
+  - **Chi phí Thuật toán & Phạm vi Ứng dụng:**
+    - Tính $n+1$ định thức cấp $n$ đòi hỏi chi phí tính toán $O((n+1)!)$ bằng định nghĩa hoặc $O(n^4)$ bằng biến đổi, trong khi khử Gauss chỉ tốn $O(n^3)$.
+    - Phương pháp Cramer chỉ nên dùng khi $n \le 3$ hoặc khi bài toán chứa tham số cần nghiệm giải tích tường minh cho một biến duy nhất. Với bài toán số liệu thực tế lớn ($n \ge 4$), khử Gauss là lựa chọn bắt buộc.
+
+---
+
 ## 5. MA TRẬN QUAN HỆ LIÊN THỰC THỂ (CROSS-ENTITY RELATIONSHIPS)
 
 | Mã Liên kết | Thực thể Nguồn | Thực thể Đích | Cơ chế Toán học | Ý nghĩa & Ứng dụng Thực tiễn |
@@ -172,24 +269,45 @@ HỆ THỐNG: TOÁN CHO KINH TẾ & QUẢN TRỊ (UEH)
 | `CROSS_E1_E4` | `[E1]` | `[E4]` | Dùng 3 phép biến đổi dòng sơ cấp đưa $A \in [E1]$ về ma trận bậc thang REF để đếm pivots | Xác định số chiều thực tế của không gian sản xuất hoặc danh mục đầu tư. |
 | `CROSS_E4_E2_E3` | `[E4]` | `[E2]`, `[E3]` | Quan hệ Tam giác Vàng: $\rho(A) = n \iff \det(A) \ne 0 \iff \exists A^{-1}$ | Chẩn đoán tính đóng/mở và tính duy nhất nghiệm của toàn bộ hệ cân bằng kinh tế. |
 | `CROSS_E3_E4` | `[E3]` | `[E4]` | Mọi ma trận khả nghịch đều có hạng đầy đủ: $\rho(A) = n$ | Bảo toàn số chiều dữ liệu khi thực hiện biến đổi ma trận trong kinh tế lượng. |
+| `CROSS_E5_E6` | `[E5]` | `[E6]` | Hệ Cramer là trường hợp riêng chính quy của Hệ tuyến tính tổng quát khi $m = n$ và $\det(A) \neq 0$ | Thu hẹp bài toán cân bằng từ không gian tổng quát sang mô hình giải tích đóng có nghiệm duy nhất. |
+| `CROSS_E6_E5_FALLBACK` | `[E6]` | `[E5]` | Khi định thức chính $D = 0$, quy tắc Cramer bất lực; Bắt buộc quay về Thuật toán khử Gauss trên $\bar{A}$ | Ngăn chặn bẫy thi cử tử huyệt kết luận vội vàng; Bảo đảm phân loại chính xác vô nghiệm hay vô số nghiệm. |
+| `CROSS_E4_E5` | `[E4]` | `[E5]` | Hạng $\rho(A)$ và $\rho(\bar{A})$ là điều kiện ắt có và đủ của Định lý Kronecker - Capelli | Cung cấp thuật toán tự động kiểm tra tính tương thích và số ẩn tự do của hệ kinh tế đa ngành. |
+| `CROSS_E2_E6` | `[E2]` | `[E6]` | Định thức cấp $n$ từ `[E2]` là công cụ định lượng tính tỷ số $x_j = \frac{D_j}{D}$ | Tính toán giải tích trực tiếp nghiệm của từng biến kinh tế riêng lẻ mà không cần giải toàn bộ hệ thống. |
+| `CROSS_E3_E6` | `[E3]` | `[E6]` | Nghiệm giải tích Cramer $x_j = \frac{D_j}{D}$ đồng nhất về mặt đại số với nghiệm ma trận $X = A^{-1} B$ | Chứng minh tính nhất quán giữa đại số ma trận nghịch đảo và lý thuyết định thức phụ hợp. |
 
 ---
 
 ## 6. ỨNG DỤNG TRỌNG TÂM TRONG KINH TẾ & QUẢN TRỊ
 
-1. **Phân tích Cân bằng Kinh tế Vĩ mô (Mô hình IS-LM):**
-   - Chuyển hệ phương trình thị trường hàng hóa (IS) và thị trường tiền tệ (LM) về dạng ma trận $A X = d$.
-   - Tính $\det(A)$ để khẳng định sự tồn tại điểm cân bằng vĩ mô $(Y^*, r^*)$ duy nhất; Sử dụng $X = A^{-1}d$ hoặc quy tắc Cramer để phân tích độ nhạy của chính sách tài khóa và tiền tệ.
-2. **Mô hình Cân đối Liên ngành Leontief (Input-Output Model):**
-   - Cho ma trận hệ số kỹ thuật $A$ và vectơ cầu cuối dụng $D$.
+1. **Mô hình Cân bằng Thị trường Nhiều Hàng hóa (Multi-Market Equilibrium):**
+   - Thiết lập hệ hàm cung - cầu tương tác giữa $n$ sản phẩm có quan hệ thay thế hoặc bổ sung:
+     $$Q_{Si}(P_i) = Q_{Di}(P_1, P_2, \dots, P_n) \quad (i = 1, 2, \dots, n)$$
+   - Chuyển hệ về dạng ma trận $A P = B$, với $P = (P_1, P_2, \dots, P_n)^T$ là vectơ giá cân bằng.
+   - Khi $\det(A) \neq 0$, hệ là Hệ Cramer, nghiệm giá cân bằng thị trường được xác định duy nhất bởi $P_j^* = \frac{D_j}{D}$.
+2. **Mô hình Cân bằng Thu nhập Quốc dân Keynesian & Đánh giá Số nhân Chính sách:**
+   - Hệ phương trình kinh tế vĩ mô đóng có chính phủ:
+     $$\begin{cases} Y = C + I_0 + G_0 \\ C = C_0 + c Y_d \\ Y_d = Y - T \\ T = T_0 + t Y \end{cases}$$
+   - Đưa về hệ phương trình tuyến tính dạng ma trận cho 2 biến nội sinh $(Y, C)$:
+     $$\begin{pmatrix} 1 & -1 \\ -c(1-t) & 1 \end{pmatrix} \begin{pmatrix} Y \\ C \end{pmatrix} = \begin{pmatrix} I_0 + G_0 \\ C_0 - c T_0 \end{pmatrix}$$
+   - Tính định thức chính: $D = 1 - c(1-t) > 0$ (do khuynh hướng tiêu dùng biên $0 < c < 1$ và thuế suất biên $0 < t < 1$).
+   - Áp dụng quy tắc Cramer tính sản lượng cân bằng quốc dân:
+     $$Y^* = \frac{D_Y}{D} = \frac{C_0 - c T_0 + I_0 + G_0}{1 - c(1-t)}$$
+   - Đạo hàm riêng để tính **Số nhân Chi tiêu Chính phủ**: $k_G = \frac{\partial Y^*}{\partial G_0} = \frac{1}{1 - c(1-t)} > 1$.
+3. **Mô hình Cân bằng Kinh tế Vĩ mô IS-LM:**
+   - Tương tác đồng thời giữa Thị trường Hàng hóa (Đường IS) và Thị trường Tiền tệ (Đường LM):
+     $$\begin{cases} \text{IS}: & Y = C(Y) + I(r) + G_0 \implies (1 - c)Y + a r = C_0 + I_0 + G_0 \\ \text{LM}: & M^s = L_1(Y) + L_2(r) \implies k Y - h r = M_0 \end{cases}$$
+   - Chuyển về hệ 2 phương trình bậc nhất 2 ẩn $(Y, r)$ dạng ma trận:
+     $$\begin{pmatrix} 1-c & a \\ k & -h \end{pmatrix} \begin{pmatrix} Y \\ r \end{pmatrix} = \begin{pmatrix} A_0 \\ M_0 \end{pmatrix}$$
+   - Định thức chính: $D = -(1-c)h - ak < 0$. Vì $D \neq 0$, hệ luôn có điểm cân bằng vĩ mô $(Y^*, r^*)$ duy nhất:
+     $$Y^* = \frac{D_Y}{D}, \quad r^* = \frac{D_r}{D}$$
+4. **Phân tích Cân đối Đầu vào - Đầu ra Leontief (Static Input-Output Model):**
+   - Cho ma trận hệ số kỹ thuật $A_{n \times n}$ và vectơ cầu cuối cùng $D_{n \times 1}$.
    - Phương trình cân đối tổng sản lượng: $X = AX + D \iff (I - A)X = D$.
-   - Điều kiện kinh tế học Hawkins-Simon và nghịch đảo Leontief: Nghiệm tổng sản lượng khả thi $X = (I - A)^{-1} D$ đòi hỏi $\det(I - A) > 0$.
-3. **Kinh tế lượng & Phân tích Hồi quy Tuyến tính (OLS):**
-   - Ước lượng vectơ tham số hồi quy: $\hat{\beta} = (X^T X)^{-1} X^T y$.
-   - Đòi hỏi ma trận biến độc lập $X_{n \times k}$ phải có hạng cột đầy đủ: $\text{rank}(X) = k$.
-   - **Bẫy Đa cộng tuyến hoàn hảo (Multicollinearity):** Nếu một biến độc lập là tổ hợp tuyến tính của các biến khác, $\text{rank}(X) < k \implies \det(X^T X) = 0 \implies X^T X$ suy biến, thuật toán OLS bị sụp đổ hoàn toàn.
-4. **Mô hình Xích Markov trong Quản trị Khách hàng & Thị phần:**
-   - Ma trận chuyển trạng thái $P$. Trạng thái cân bằng dài hạn $\pi^*$ là nghiệm của phương trình ma trận $\pi^* P = \pi^*$ tương đương $(\mathbf{P}^T - I)\pi^* = \mathbf{0}$, giải bằng phân tích hạng và nghiệm hệ phương trình thuần nhất.
+   - Giải bằng thuật toán khử Gauss hoặc ma trận nghịch đảo Leontief $X = (I - A)^{-1} D$ để xác định kế hoạch sản xuất của toàn bộ các ngành kinh tế quốc dân.
+5. **Bài toán Phân bổ Nguồn lực Sản xuất Khan hiếm & Hoạch định Tối ưu:**
+   - Doanh nghiệp sản xuất $n$ loại sản phẩm bằng $m$ loại tài nguyên khan hiếm.
+   - Hệ phương trình công nghệ: $A x = b$, trong đó $a_{ij}$ là định mức tiêu hao tài nguyên $i$ cho một đơn vị sản phẩm $j$, $b_i$ là giới hạn tài nguyên khả dụng.
+   - Khi $m < n$ (số tài nguyên ít hơn số loại sản phẩm), hệ có vô số nghiệm phụ thuộc $n - r$ tham số tự do, cho phép nhà quản trị lựa chọn phương án sản xuất tối đa hóa lợi nhuận.
 
 ---
 
@@ -198,7 +316,7 @@ HỆ THỐNG: TOÁN CHO KINH TẾ & QUẢN TRỊ (UEH)
 | Chương học | Tên Chương | Nội dung Buổi học | Trạng thái Mindmap | Trạng thái Master Context | File Bản đồ Mindmap |
 | :---: | :--- | :--- | :---: | :---: | :--- |
 | **Chương 1** | **Đại số ma trận** | • Buổi 1: Ma trận & Ma trận đặc biệt<br>• Buổi 2: Định thức ma trận vuông<br>• Buổi 3: Ma trận nghịch đảo<br>• Buổi 4: Hạng của ma trận | ✅ **HOÀN THÀNH** | ✅ **HOÀN THÀNH** | `Chương 1 - Đại số ma trận.drawio.xml` |
-| **Chương 2** | **Hệ phương trình tuyến tính** | *Sắp triển khai theo lộ trình UEH* | ⏳ Chờ xử lý | ⏳ Chờ xử lý | *(Chưa tạo)* |
+| **Chương 2** | **Hệ phương trình tuyến tính** | • Buổi 6: Hệ PTTT tổng quát, Kronecker-Capelli, Khử Gauss, Hệ Cramer & Quy tắc Cramer | ✅ **HOÀN THÀNH**<br>(Kiến trúc 5 Cột Tuần tự E2 ➔ E6) | ✅ **HOÀN THÀNH** | `Drawio/Chương 2 - Hệ phương trình tuyến tính.drawio.xml` |
 | **Chương 3** | **Không gian vectơ $\mathbb{R}^n$** | *Sắp triển khai theo lộ trình UEH* | ⏳ Chờ xử lý | ⏳ Chờ xử lý | *(Chưa tạo)* |
 | **Chương 4** | **Phép tính vi phân hàm nhiều biến** | *Sắp triển khai theo lộ trình UEH* | ⏳ Chờ xử lý | ⏳ Chờ xử lý | *(Chưa tạo)* |
 | **Chương 5** | **Bài toán tối ưu trong kinh tế** | *Sắp triển khai theo lộ trình UEH* | ⏳ Chờ xử lý | ⏳ Chờ xử lý | *(Chưa tạo)* |
